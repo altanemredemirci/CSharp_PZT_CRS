@@ -145,10 +145,11 @@
             //int sayi2 = 10; // Farklı bir değeri tutmak için değişken tanımlandı.
 
 
-            const int sayi = 10;
-            sayi = 15;
+            //const int sayi = 10;
+            //sayi = 15;
             #endregion
 
+            Console.WriteLine("Hello World");
 
         }
 
