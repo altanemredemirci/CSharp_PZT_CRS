@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            #region TÜR DÖNÜŞÜMLERİ
+
+
+
             /*
              Kullanıcıdan bir data almak için Console.ReadLine() komutu kullanılır.
              Kullanıcıya bilgi vermek(konsole mesaj yazmak) için Console.WriteLine() komutu kullanılır.
@@ -149,12 +153,191 @@
             //sayi = 15;
             #endregion
 
-            Console.WriteLine("Hello World");
+            //Console.WriteLine("Hello World");
 
-            Console.WriteLine("klsmdmadsmdsd");
+            //Console.WriteLine("klsmdmadsmdsd");
+
+            #endregion
+
+            #region OPERATÖRLER
+
+            #region *** MATEMATİKSEL OPERATÖRLER (+,-,*,/,%)
+            //int sayi = 5;
+            //int sayi2 = 12;
+
+            ////Mod Alma(%)
+
+            //Console.WriteLine(sayi%sayi2);
+
+
+            //Bölme işleminde, işleme uğrayan sayılardan biri dahi ondalıklı ise sonuç ondalıklı ama her iki sayıda int ise sonuç TAM SAYI çıkar.
+            //double sayi = 12;
+            //int sayi2 = 5;
+
+            //int sonuc = (int)(sayi / sayi2);
+
+            //Console.WriteLine("Sonuç:"+sonuc);
+            #endregion
+
+            #region  *** ATAMA(=) ve İŞLEMLİ ATAMA OPERATÖRLERİ ***
+            //int sayi = 5;
+
+            //sayi +=1;  //sayi = sayi + 1;
+            //sayi -=1;  //sayi = sayi - 1;
+            //sayi *=2;  //sayi = sayi * 2;
+            //sayi /=2;  //sayi = sayi / 2;
+
+            //BİR ARTTIRMA, BİR AZALTMA
+
+            //int sayi = 5;
+            //sayi++;  //sayi += 1;   //sayi = sayi + 1;
+            //Console.WriteLine(sayi);
+
+            //sayi--;  //sayi -= 1;   //sayi = sayi - 1;
+            //Console.WriteLine(sayi);
+
+            //Örnek:
+            //int a = 5;
+            //int b = a++; //a değerini b ye ata sonra a değerini 1 arttır.
+            //int c = ++a; //a değerini 1 arttır sonra a değerini c ye ata.
+            //int d = b + c;
+            //double e = d / a;
+
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            //Console.WriteLine(c);
+            //Console.WriteLine(d);
+            //Console.WriteLine(e);
+            #endregion
+
+            #region *** KARŞILAŞTIRMA OPERATÖRLERİ ***
+
+            //int sayi = 5;
+            //int sayi2 = 6;
+
+            //bool sonuc  = sayi > sayi2;
+            //bool sonuc2 = sayi < sayi2;
+            //bool sonuc3 = sayi >= sayi2;
+            //bool sonuc4 = sayi <= sayi2;
+            //bool sonuc5 = sayi == sayi2; // sayi ile sayi2 eşit mi?
+            //bool sonuc6 = sayi != sayi2; // sayi ile sayi2 eşit değil mi?
+
+            //Console.WriteLine("Sonuç:"+sonuc);
+            //Console.WriteLine($"Sonuç:{sonuc2}");
+            //Console.WriteLine("Sonuç:{0}",sonuc3);
+            //Console.WriteLine("Sonuç:" + sonuc4);
+            //Console.WriteLine("Sonuç:" + sonuc5);
+            //Console.WriteLine("Sonuç:" + sonuc6);
+            #endregion
+
+            #region *** KIYAS OPERATÖRÜ(?:) *** 
+            // ? kıyas durumu TRUE ise atanacak değer 
+            // : kıyas durumu FALSE ise atanacak değer
+            //int sayi = 5;
+
+            //string sonuc = 5 > 6 ? "Büyüktür" : "Küçüktür";
+            //int sonuc2 = 5 > 6 ? 1 : 0;
+
+            #endregion
+
+            #region *** ERİŞİM OPERATÖRÜ(.) ***
+
+            //Console.WriteLine();
+
+            //Console.ReadLine().ToString().ToLower();
+
+            #endregion
+
+            #region *** MANTIKSAL OPERATÖRLERİ ***
+            // AND - &&
+            //// Bir işlemin başarılı(true) olması için her şartın sağlanması gerekiyor ise && kullanılır.
+
+            //string username = "muhammed";
+            //string password = "1";
+
+            //Console.WriteLine("Kullanıcı Adınız:");
+            //string kullaniciAdi = Console.ReadLine();
+
+            //Console.WriteLine("Şifreniz:");
+            //string pass = Console.ReadLine();
+
+            ////Oturum açma işleminin sağlnması için hem kullanıcıadı hemde şifresi uyuşmalıdır.
+
+            //bool girisDurumu = username == kullaniciAdi && password==pass;
+
+            //Console.WriteLine(girisDurumu);
+
+            /* Çarpma işlemi mantığı ile çalışır.
+             1  2   Sonuc
+             0  0   0
+             0  1   0
+             1  0   0
+             1  1   1 
+             */
+
+
+
+            // OR - ||
+            //// Bir işlemin başarılı(true) olması için şartlardan herhangi birinin sağlanması gerekiyor ise || kullanılır.
+
+            //string username = "muhammed";
+            //string email = "altanemre@gmail.com";
+            //string password = "1";
+
+            //Console.WriteLine("Kullanıcı Adı/Email:");
+            //string kullanici = Console.ReadLine();
+
+
+            //Console.WriteLine("Şifreniz:");
+            //string pass = Console.ReadLine();
+
+            //////Oturum açma işleminin sağlanması için (kullanıcıadı veya email'in uyuşması) ve şifrenin uyuşması gereklidir.
+
+            //bool girisDurumu = (username == kullanici || email == kullanici) && pass==password;
+
+            //Console.WriteLine(girisDurumu);
+
+            /* Toplama işlemi mantığı ile çalışır.
+             1  2   Sonuc
+             0  0   0
+             0  1   1
+             1  0   1
+             1  1   1 
+             */
+
+
+
+            // NOT - !
+
+
+            #endregion
+
+            #region Kullanıcıdan yaş, mezuniyet ve Cinsiyet bilgilerini alınız.  
+            //Ehliyet alma koşulu: Yaş 18 den büyük ve mezuniyet Lise olamalı. veya cinsiyet erkek olmalı. 
+                      
+
+            Console.WriteLine("Yaş:");
+            int yas = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Mezuniyet:");
+            string mezuniyet = Console.ReadLine().ToLower();
+
+            Console.WriteLine("Cinsiyet:");
+            string cinsiyet = Console.ReadLine().ToUpper();
+
+            bool sonuc = (yas > 18 && mezuniyet == "lise") || cinsiyet == "ERKEK";
+
+            Console.WriteLine("Sonuç:"+sonuc);
+
+            #endregion
+
+
+
+            #endregion
+
         }
 
-       
+
 
     }
 
