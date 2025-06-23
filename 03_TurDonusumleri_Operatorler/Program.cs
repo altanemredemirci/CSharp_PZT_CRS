@@ -1,4 +1,6 @@
-﻿namespace _03_TurDonusumleri_Operatorler
+﻿using System.Diagnostics.Metrics;
+
+namespace _03_TurDonusumleri_Operatorler
 {
     internal class Program
     {
@@ -11,7 +13,7 @@
             /*
              Kullanıcıdan bir data almak için Console.ReadLine() komutu kullanılır.
              Kullanıcıya bilgi vermek(konsole mesaj yazmak) için Console.WriteLine() komutu kullanılır.
-             
+
              */
             //int yas1 = 35;
             //int yas2 = 15;
@@ -47,7 +49,7 @@
             2-"1.kardeşin yaşı:"
             3-string yas1 = console oku
             4-yas1 int çevir            
-                          
+
             */
 
             //Console.WriteLine("1.Kardeşin Yaşı:");
@@ -314,32 +316,134 @@
 
             #region Kullanıcıdan yaş, mezuniyet ve Cinsiyet bilgilerini alınız.  
             //Ehliyet alma koşulu: Yaş 18 den büyük ve mezuniyet Lise olamalı. veya cinsiyet erkek olmalı. 
-                      
+
+
+            //Console.WriteLine("Yaş:");
+            //int yas = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Mezuniyet:");
+            //string mezuniyet = Console.ReadLine().ToLower();
+
+            //Console.WriteLine("Cinsiyet:");
+            //string cinsiyet = Console.ReadLine().ToUpper();
+
+            //bool sonuc = (yas > 18 && mezuniyet == "lise") || cinsiyet == "ERKEK";
+
+            //Console.WriteLine("Sonuç:"+sonuc);
+
+            #endregion
+
+            #endregion
+
+
+            #region ALIŞTIRMALAR
+            /*
+             ### Değişkenler ve Veri Tipleri
+            1. *Soru:* Kullanıcının adını, yaşını ve boyunu (metre cinsinden) alıp ekrana yazdıran bir program yazın.
+            - *İpucu:* string, int, ve double veri tiplerini kullanabilirsiniz.
+
+            Console.WriteLine("Kullanıcı adı:");
+            string username = Console.ReadLine();
 
             Console.WriteLine("Yaş:");
-            int yas = Convert.ToInt32(Console.ReadLine());
+            int age = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Mezuniyet:");
-            string mezuniyet = Console.ReadLine().ToLower();
+            Console.WriteLine("Boyunuz(m):");
+            double height = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Cinsiyet:");
-            string cinsiyet = Console.ReadLine().ToUpper();
+            Console.WriteLine("Kullanıcı Adı:"+username+" Yaş:"+age+" Boy:"+height);
+            Console.WriteLine($"Kullanıcı Adı:{username} Yaş:{age} Boy:{height}");
 
-            bool sonuc = (yas > 18 && mezuniyet == "lise") || cinsiyet == "ERKEK";
 
-            Console.WriteLine("Sonuç:"+sonuc);
+            2. *Soru:* Aşağıdaki değişkenleri tanımlayın ve uygun değerler atayın:
+            - bool isStudent
+            - char grade
+            - float temperature
 
+            
+            bool isStudent = true;
+            char grade = 'A';
+            float temperature = 10.5f;
+}
+
+
+            ### Tür Dönüşümleri
+            3. *Soru:* Kullanıcıdan bir sayı alın ve bu sayıyı hem int hem de double veri tipine dönüştürerek ekrana yazdırın.
+            - *İpucu:* Convert.ToInt32() ve Convert.ToDouble() yöntemlerini kullanabilirsiniz.
+            
+            Console.WriteLine("Bir sayı giriniz");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(sayi);
+
+            double sayi2 = Convert.ToDouble(sayi);
+            Console.WriteLine(sayi2);
+
+
+
+            Console.WriteLine("Bir sayı giriniz");
+            object sayi = Console.ReadLine();
+
+            int sayi3 = (Convert.ToInt32(sayi));
+
+            double sayi2 = Convert.ToDouble(sayi);
+            Console.WriteLine(sayi2+sayi3);
+
+
+            4. *Soru:* double türünde bir değişken oluşturun ve bu değişkenin değerini string olarak ekrana yazdırın.
+            - *İpucu:* ToString() yöntemini kullanabilirsiniz.
+            
+
+            ### Operatörler
+            5. *Soru:* İki tam sayı alın ve bu sayılar üzerinde toplama, çıkarma, çarpma ve bölme işlemlerini yaparak sonuçları ekrana yazdırın.
+            - *İpucu:* +, -, *, / operatörlerini kullanabilirsiniz.
+
+            int bolunen = 10;
+            double bolen = 3;
+
+            double sonuc = (int)(bolunen / bolen);
+            Console.WriteLine(sonuc);
+
+            Console.WriteLine(bolunen/bolen);
+
+
+            6. *Soru:* Kullanıcıdan iki sayı alın ve bu sayıların birbirine eşit olup olmadığını kontrol edin. Sonucu ekrana yazdırın.
+            - *İpucu:* == operatörünü kullanabilirsiniz.
+
+            ### Karma Sorular
+            7. *Soru:* Kullanıcıdan bir sayı alın ve bu sayının tek mi çift mi olduğunu kontrol edin. Sonucu ekrana yazdırın.
+            - *İpucu:* % operatörü kullanarak kalan değerini kontrol edebilirsiniz.
+
+            Console.WriteLine("1.sayı:");
+            int sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            bool sonuc = sayi1 % 2 == 0;
+
+            string cevap = sonuc == true ? "Çift" : "Tek";
+            Console.WriteLine(cevap); //sayi1%2: sayi1 2'ye bölümünden kalanı verir.
+
+
+            8. *Soru:* Kullanıcıdan bir sıcaklık değeri alın ve bu değerin 0°C'nin altında olup olmadığını kontrol edin. Eğer öyleyse "Dondurucu soğuk!" mesajını ekrana yazdırın.
+            - *İpucu:* < operatörünü kullanabilirsiniz.
+            
+            Console.WriteLine("Hava kaç derece?");
+            int derece = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(derece<0 ? "Dondurucu Soğuk" : "Yakıcı Sıcak");
+
+            bool sonuc = derece < 0;
+
+            string havaDurumu = sonuc==true ? "Dondurucu Soğuk" : "Yakıcı Sıcak";
+            Console.WriteLine("Hava Durumu:"+havaDurumu);
+             */
             #endregion
 
+            //Console.WriteLine("Bakiye:");
+            //float bakiye = Convert.ToSingle(Console.ReadLine());
 
+            //float balance = float.Parse(Console.ReadLine());
 
-            #endregion
 
         }
-
-
-
     }
-
-    
 }

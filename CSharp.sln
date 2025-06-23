@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Değişkenler_VeriTiplei
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_TurDonusumleri_Operatorler", "03_TurDonusumleri_Operatorler\03_TurDonusumleri_Operatorler.csproj", "{6ABBC8D9-5F45-4094-AC7E-F97A90BDDB15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_StringMetotlar", "04_StringMetotlar\04_StringMetotlar.csproj", "{72B1A3C4-B009-4B21-A573-2BC18EC49584}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6ABBC8D9-5F45-4094-AC7E-F97A90BDDB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ABBC8D9-5F45-4094-AC7E-F97A90BDDB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ABBC8D9-5F45-4094-AC7E-F97A90BDDB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B1A3C4-B009-4B21-A573-2BC18EC49584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B1A3C4-B009-4B21-A573-2BC18EC49584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B1A3C4-B009-4B21-A573-2BC18EC49584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B1A3C4-B009-4B21-A573-2BC18EC49584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

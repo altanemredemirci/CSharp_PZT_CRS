@@ -41,7 +41,9 @@ SÖZEL VERİ TİPLERİ:
 
 MANTIKSAL VERİ TİPLERİ - BOOLEAN:
     ** BOOL: Sadece true ve false değerlerini tutar.Kullanım alanı genellikle karşılaştırma işlemleridir.
-    
+   
+OBJECT - NESNE:
+    ** object: genel kullanıma açık ve kendi içinde birden fazla farklı veri tipi tutabilen bir veri tipidir.
 
 */
 
@@ -73,3 +75,9 @@ MANTIKSAL VERİ TİPLERİ - BOOLEAN:
 //string isaret = "!";
 
 //Console.WriteLine(ad+yas+isaret);
+
+//object sayi = 45;
+//object ad = "Altan";
+//object sayi2 = 34;
+
+//Console.WriteLine((int)sayi+(int)sayi2);
