@@ -137,21 +137,91 @@
 
             #endregion
 
-          #region Kullanıcıdan iki ürün fiyatı isteyin, ürün fiyat toplamları 2500 tl geçerse ucuz ürüne  % 25 indirim uygulayınız
+            #region Kullanıcıdan iki ürün fiyatı isteyin, ürün fiyat toplamları 2500 tl geçerse ucuz ürüne  % 25 indirim uygulayınız
 
-            double fiyat = 1000;
+            /*
+            1-Başla
+            2-İki adet ürün fiyatı alınız
+            3-Ürün fiyatlarını toplayınız
+            4-Eğer toplamı 2500'den büyük ise 
+                4.1-Ucuz ürünü bul
+                4.2-Ucuz ürüne %25 indirim uygula
+                4.3-Toplamı ekrana yazdır
+            5-Değilse Toplamı ekrana yazdır.
+             */
 
-            fiyat = fiyat * 0.75;
+            //Console.WriteLine("1.Ürün Fiyatı:");
+            //double fiyat1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine(fiyat);
+            //Console.WriteLine("2.Ürün Fiyatı:");
+            //double fiyat2 = Convert.ToDouble(Console.ReadLine());
+
+            //double odeme = fiyat1 + fiyat2;
+
+            //if (odeme > 2500)
+            //{
+            //    if (fiyat1 < fiyat2)
+            //    {
+            //        fiyat1 = fiyat1 * 0.75;
+
+            //    }
+            //    else
+            //    {                    
+            //        fiyat2 = fiyat2 * 0.75;
+            //    }              
+            //}
+            //Console.WriteLine("Ödeme:" + (fiyat1 + fiyat2));
+
             #endregion
-
             #region Aylık geliri 40000 üstünde ise %12 vergi kesilecek,
             // 40000 ve altında ise %9 vergi kesimi yapılarak 
             // kullanıcıya yeni gelirini bu hesaplamalar sonucunda gösteriniz
+
+            //Console.WriteLine("Aylık geliriniz:");
+            //double aylik = Convert.ToDouble(Console.ReadLine());
+
+            #region 1.Yol
+            //if (aylik > 40000)
+            //{
+            //    //aylik = aylik * 0.88;
+            //    double vergi = (aylik / 100) * 12;
+            //    aylik = aylik - vergi;
+
+            //    Console.WriteLine("Vergi Tutarı:" + vergi);
+            //    Console.WriteLine("Aylık:" + aylik);
+            //}
+            //else
+            //{
+            //    double vergi = (aylik / 100) * 9;
+            //    aylik = aylik - vergi;
+
+            //    Console.WriteLine("Vergi Tutarı:" + vergi);
+            //    Console.WriteLine("Aylık:" + aylik);
+            //}
             #endregion
 
-          #region Öğrenciden vize ve final notlarını alınız ve vize %40 final %60 alınarak ortalamasını hesaplayınız. 
+            #region 2.Yol
+            //int vergiOrani = aylik > 40000 ? 12 : 9;
+
+            ///*
+            // int vergiOrani=0;
+            //if(aylik>40000)
+            //    vergiOrani=12;
+            //else
+            //    vergiOrani=9;
+            // */
+
+            //double vergi = (aylik / 100) * vergiOrani;
+            //double netAylik = aylik - vergi;
+
+            //Console.WriteLine("Vergi Tutarı:" + vergi);
+            //Console.WriteLine("Aylık:" + aylik);
+            #endregion
+
+
+            #endregion
+
+            #region Öğrenciden vize ve final notlarını alınız ve vize %40 final %60 alınarak ortalamasını hesaplayınız. 
 
             //ortalamaya göre 
             /*
@@ -164,13 +234,80 @@
             85,100 AA
 
              */
+            //GOTO komutu: Belirli bir satırdan kod okuyucuyu istemilen satıra gönderir.
+
+            //VIZE:
+            //    Console.Write("Vize Notunu Giriniz: ");
+            //    double vizeNotu = Convert.ToDouble(Console.ReadLine());
+
+            //    if (vizeNotu >= 0 && vizeNotu <= 100)
+            //    {
+            //    FINAL:
+            //        Console.Write("Final Notunu Giriniz: ");
+            //        double finalNotu = Convert.ToDouble(Console.ReadLine());
+
+            //        if (finalNotu >= 0 && finalNotu <= 100)
+            //        {
+            //            double ortalama = vizeNotu * 0.40 + finalNotu * 0.60;
+
+            //            if (ortalama < 25)
+            //            {
+            //                Console.WriteLine("FF");
+            //            }
+            //            else if (ortalama < 45)
+            //            {
+            //                Console.WriteLine("DD");
+            //            }
+            //            else if (ortalama < 55)
+            //            {
+            //                Console.WriteLine("CC");
+            //            }
+            //            else if (ortalama < 70)
+            //            {
+            //                Console.WriteLine("BC");
+            //            }
+            //            else if (ortalama < 85)
+            //            {
+            //                Console.WriteLine("BB");
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("AA");
+            //            }
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Final Notu 0-100 aralığında olmalıdır!!!");
+            //            goto FINAL;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Vize Notu 0-100 aralığında olmalıdır!!!");
+            //        goto VIZE;
+            //    }
+
 
             #endregion
-            
+
             #region  1-50 arasındaki sayıların içinde 7'e tam bölünenleri ekrana teker teker yazdırınız.
+            //    int basla = 1;
+            //    int bitir = 50;
+
+            //DON:
+            //    if (basla < bitir)
+            //    {
+            //        if (basla % 7 == 0)
+            //        {
+            //            Console.WriteLine(basla);
+            //        }
+            //        basla += 1;
+            //        goto DON;
+            //    }
+
+
             #endregion
 
-            
             #region   Kullanıcıdan isim, yaş, maaş ve çocuk sayısı alınsın.
             /*
                 Eğer kulanıcının yaşı 45'in altındaysa;
@@ -181,7 +318,124 @@
                 Son olarak ekrana: "Nesrin Yılmaz, Maaşınız: 40000₺" yazılacak.
              */
 
+            //Console.WriteLine("İsim:");
+            //string isim = Console.ReadLine();
+
+            //Console.WriteLine("Yaş:");
+            //int yas = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Maaş:");
+            //double maas = Convert.ToDouble(Console.ReadLine());
+
+            //Console.WriteLine("Çocuk Sayısı:");
+            //int cocukSayisi = Convert.ToInt32(Console.ReadLine());
+
+            //if (yas < 45)
+            //{
+            //    if (cocukSayisi < 3)
+            //    {
+            //        maas = maas + (cocukSayisi * 2500);
+            //    }
+            //    else
+            //    {
+            //        maas += cocukSayisi * 2000;
+            //    }
+            //}
+            //else
+            //{
+            //    maas += 5000;
+            //}
+
+            //Console.WriteLine($"{isim}, Maaşınız:{maas.ToString("c")}");
             #endregion
+
+            #region EMEKLİLİK HESABI
+            /*
+                 kullanıcıdan alınan cinsiyet bilgisine göre
+          ==> ERKEK ise
+                yaşı 60 ve üstü ise maaşının 10 katı kadar ikramiye alaral emekli edilecek, 
+                yaş 60'ın altında ise çalıştığı gün sayısına göre 
+                    eğer 6000 ve üstü ise maaşının 11 katı kadar ikramiye alarak emekli edilecek, 
+                    6000 altında ise emekli edilmeyecek bilgisi kullanıcıya gösterilecek
+          ==> KADIN ise
+           yaşı 58 ve üstü ise maaşının 10 katı kadar ikramiye alarak emekli edilecek, yaş 58'ın altında ise çalıştığı gün sayısına göre eğer 3600 ve üstü ise maaşının 11 katı kadar ikramiye alarak emekli edilecek, 3600 altında ise emekli edilmeyecek bilgisi kullanıcıya gösterilecek
+          ==> cinsiyet bilgisi switch-case ile sorgulanacak
+             
+             */
+
+            Console.WriteLine("Cinsiyet(E/K):");
+            string cinsiyet = Console.ReadLine().ToUpper();
+
+            if (cinsiyet == "E")
+            {
+                Console.WriteLine("Yaş:");
+                int yas = Convert.ToInt32(Console.ReadLine());
+
+                if (yas >= 60)
+                {
+                    Console.WriteLine("Maaş:");
+                    double maas = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("İkramiyeniz:"+(maas*10));
+                }
+                else
+                {
+                    Console.WriteLine("Prim gün sayısı:");
+                    int prim = Convert.ToInt32(Console.ReadLine());
+
+                    if (prim >= 6000)
+                    {
+                        Console.WriteLine("Maaş:");
+                        double maas = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("İkramiyeniz:" + (maas * 11));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Emeklilik hayal. Çalışmaya devam :)");
+                    }
+                }
+
+
+            }
+            else if (cinsiyet == "K")
+            {
+                Console.WriteLine("Yaş:");
+                int yas = Convert.ToInt32(Console.ReadLine());
+
+                if (yas >= 58)
+                {
+                    Console.WriteLine("Maaş:");
+                    double maas = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("İkramiyeniz:" + (maas * 10));
+                }
+                else
+                {
+                    Console.WriteLine("Prim gün sayısı:");
+                    int prim = Convert.ToInt32(Console.ReadLine());
+
+                    if (prim >= 3600)
+                    {
+                        Console.WriteLine("Maaş:");
+                        double maas = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("İkramiyeniz:" + (maas * 11));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Emeklilik hayal. Çalışmaya devam :)");
+                    }
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Hatalı Cinsiyet Girişi!!!");
+            }
+            #endregion
+
+
 
 
         }
