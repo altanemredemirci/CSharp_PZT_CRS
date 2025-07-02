@@ -363,80 +363,245 @@
              
              */
 
-            Console.WriteLine("Cinsiyet(E/K):");
-            string cinsiyet = Console.ReadLine().ToUpper();
+            //Console.WriteLine("Cinsiyet(E/K):");
+            //string cinsiyet = Console.ReadLine().ToUpper();
 
-            if (cinsiyet == "E")
-            {
-                Console.WriteLine("Yaş:");
-                int yas = Convert.ToInt32(Console.ReadLine());
+            //if (cinsiyet == "E")
+            //{
+            //    Console.WriteLine("Yaş:");
+            //    int yas = Convert.ToInt32(Console.ReadLine());
 
-                if (yas >= 60)
-                {
-                    Console.WriteLine("Maaş:");
-                    double maas = Convert.ToDouble(Console.ReadLine());
+            //    if (yas >= 60)
+            //    {
+            //        Console.WriteLine("Maaş:");
+            //        double maas = Convert.ToDouble(Console.ReadLine());
 
-                    Console.WriteLine("İkramiyeniz:"+(maas*10));
-                }
-                else
-                {
-                    Console.WriteLine("Prim gün sayısı:");
-                    int prim = Convert.ToInt32(Console.ReadLine());
+            //        Console.WriteLine("İkramiyeniz:"+(maas*10));
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Prim gün sayısı:");
+            //        int prim = Convert.ToInt32(Console.ReadLine());
 
-                    if (prim >= 6000)
-                    {
-                        Console.WriteLine("Maaş:");
-                        double maas = Convert.ToDouble(Console.ReadLine());
+            //        if (prim >= 6000)
+            //        {
+            //            Console.WriteLine("Maaş:");
+            //            double maas = Convert.ToDouble(Console.ReadLine());
 
-                        Console.WriteLine("İkramiyeniz:" + (maas * 11));
-                    }
-                    else
-                    {
-                        Console.WriteLine("Emeklilik hayal. Çalışmaya devam :)");
-                    }
-                }
+            //            Console.WriteLine("İkramiyeniz:" + (maas * 11));
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Emeklilik hayal. Çalışmaya devam :)");
+            //        }
+            //    }
 
 
-            }
-            else if (cinsiyet == "K")
-            {
-                Console.WriteLine("Yaş:");
-                int yas = Convert.ToInt32(Console.ReadLine());
+            //}
+            //else if (cinsiyet == "K")
+            //{
+            //    Console.WriteLine("Yaş:");
+            //    int yas = Convert.ToInt32(Console.ReadLine());
 
-                if (yas >= 58)
-                {
-                    Console.WriteLine("Maaş:");
-                    double maas = Convert.ToDouble(Console.ReadLine());
+            //    if (yas >= 58)
+            //    {
+            //        Console.WriteLine("Maaş:");
+            //        double maas = Convert.ToDouble(Console.ReadLine());
 
-                    Console.WriteLine("İkramiyeniz:" + (maas * 10));
-                }
-                else
-                {
-                    Console.WriteLine("Prim gün sayısı:");
-                    int prim = Convert.ToInt32(Console.ReadLine());
+            //        Console.WriteLine("İkramiyeniz:" + (maas * 10));
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Prim gün sayısı:");
+            //        int prim = Convert.ToInt32(Console.ReadLine());
 
-                    if (prim >= 3600)
-                    {
-                        Console.WriteLine("Maaş:");
-                        double maas = Convert.ToDouble(Console.ReadLine());
+            //        if (prim >= 3600)
+            //        {
+            //            Console.WriteLine("Maaş:");
+            //            double maas = Convert.ToDouble(Console.ReadLine());
 
-                        Console.WriteLine("İkramiyeniz:" + (maas * 11));
-                    }
-                    else
-                    {
-                        Console.WriteLine("Emeklilik hayal. Çalışmaya devam :)");
-                    }
-                }
+            //            Console.WriteLine("İkramiyeniz:" + (maas * 11));
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Emeklilik hayal. Çalışmaya devam :)");
+            //        }
+            //    }
 
-            }
-            else
-            {
-                Console.WriteLine("Hatalı Cinsiyet Girişi!!!");
-            }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Hatalı Cinsiyet Girişi!!!");
+            //}
             #endregion
 
 
+            #region SWITCH-CASE
+            /*
+             Bu karar yapısı bir verinin eşit olduğu duruma göre çalışır.
+             
+             */
 
+            //int sayi = 5;
+            //switch (sayi)
+            //{
+            //    case 1:
+            //        //yapılacak işlem
+            //        break;
+            //    case 2:
+            //        //yapılacak işlem
+            //        break;
+            //    default:
+            //        break;
+            //}
+
+            #region 1.Örnek
+
+            //Kullanıcıya haftanın kaçıncı günü olduğunu soralım ve girilen rakama göre gün adını ekrana yazdıralım.
+
+            //Console.WriteLine("Haftanın gün sayısı:");
+            //int gun = Convert.ToInt32(Console.ReadLine());
+
+            //switch (gun) // ==
+            //{
+            //    case 1:
+            //        Console.WriteLine("Pazartesi");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Salı");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Çarşamba");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Perşembe");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("Cuma");
+            //        break;
+            //    case 6:
+            //        Console.WriteLine("Cumartesi");
+            //        break;
+            //    case 7:
+            //        Console.WriteLine("Pazar");
+            //        break;
+
+            //    default: //else
+            //        Console.WriteLine("Hafta 7 günden oluşur.!!!");
+            //        break;
+            //}
+
+            #endregion
+
+            #region Klavyeden iki sayı, bir işlem(+,-,*,/) girilecek. Sayılar girilen işleme göre sonucu ekrana yazdıran switch case.
+
+            //Console.WriteLine("1.Sayıyı Giriniz");
+            //int sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("2.Sayıyı Giriniz");
+            //int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("İşlem Seçiniz(+,-,*,/):");
+            //string islem = Console.ReadLine();
+
+            //switch (islem)
+            //{
+            //    case ("+"):
+            //        Console.WriteLine(sayi1+sayi2);
+            //        break;
+            //    case ("-"):
+            //        Console.WriteLine(sayi1 - sayi2);
+            //        break;
+            //    case ("*"):
+            //        Console.WriteLine(sayi1 * sayi2);
+            //        break;
+            //    case "/":
+            //        Console.WriteLine(sayi1 / sayi2);
+            //        break;
+            //    default:
+            //        Console.WriteLine("Hatalı İşlem Seçimi!!");
+            //        break;
+            //}
+
+
+
+
+            #endregion
+            #region   
+            /*
+            kullanıcıdan alınan cinsiyet bilgisine göre
+            ==> ERKEK ise
+            yaşı 60 ve üstü ise maaşının 10 katı kadar ikramiye alaral emekli edilecek, yaş 60'ın altında ise çalıştığı gün sayısına göre eğer 6000 ve üstü ise maaşının 11 katı kadar ikramiye alarak emekli edilecek,    6000 altında ise emekli edilmeyecek bilgisi kullanıcıya gösterilecek
+            ==> KADIN ise
+             yaşı 58 ve üstü ise maaşının 10 katı kadar ikramiye alarak emekli edilecek, yaş 58'ın altında ise çalıştığı gün sayısına göre eğer 3600 ve üstü ise maaşının 11 katı kadar ikramiye alarak emekli edilecek, 3600 altında ise emekli edilmeyecek bilgisi kullanıcıya gösterilecek
+            ==> cinsiyet bilgisi switch-case ile sorgulanacak
+             */
+
+            #endregion
+
+            //Console.WriteLine("Cinsiyet:");
+            //string cinsiyet = Console.ReadLine().ToUpper();
+
+            //switch (cinsiyet)
+            //{
+            //    case "ERKEK":
+
+            //        Console.WriteLine("Yaş:");
+            //        int yas = Convert.ToInt32(Console.ReadLine());
+
+            //        if (yas > 59)
+            //        {
+            //            Console.WriteLine("Maaş:");
+            //            int maas = Convert.ToInt32(Console.ReadLine());
+            //            Console.WriteLine("İkramiyeniz:" + (maas * 10));
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Prim Gününüz:");
+            //            int prim = Convert.ToInt32(Console.ReadLine());
+            //            if (prim >= 6000)
+            //            {
+            //                Console.WriteLine("Maaş:");
+            //                int maas = Convert.ToInt32(Console.ReadLine());
+            //                Console.WriteLine("İkramiyeniz:" + (maas * 11));
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("Emeklilik hayal. WELCOME TO TURKEY");
+            //            }
+            //        }
+            //        break;
+
+            //    case "KADIN":
+
+            //        Console.WriteLine("Yaş:");
+            //        int age = Convert.ToInt32(Console.ReadLine());
+            //        if (age > 57)
+            //        {
+            //            Console.WriteLine("Maaş:");
+            //            int maas = Convert.ToInt32(Console.ReadLine());
+            //            Console.WriteLine("İkramiyeniz:" + (maas * 10));
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Prim Gününüz:");
+            //            int prim = Convert.ToInt32(Console.ReadLine());
+            //            if (prim >= 3600)
+            //            {
+            //                Console.WriteLine("Maaş:");
+            //                int maas = Convert.ToInt32(Console.ReadLine());
+            //                Console.WriteLine("İkramiyeniz:" + (maas * 11));
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("Emeklilik hayal. WELCOME TO TURKEY");
+            //            }
+            //        }
+
+
+            //        break;
+            //}
+            #endregion
 
         }
     }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_DateTime", "04_DateTime\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_KararYapilar", "05_KararYapilar\05_KararYapilar.csproj", "{6EA2FC78-52DA-42FB-BBF0-9BEC3F802DE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Try_Catch", "06_Try_Catch\06_Try_Catch.csproj", "{419FC203-5F18-4C96-B38E-CB7E427AD647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6EA2FC78-52DA-42FB-BBF0-9BEC3F802DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA2FC78-52DA-42FB-BBF0-9BEC3F802DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA2FC78-52DA-42FB-BBF0-9BEC3F802DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419FC203-5F18-4C96-B38E-CB7E427AD647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419FC203-5F18-4C96-B38E-CB7E427AD647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419FC203-5F18-4C96-B38E-CB7E427AD647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419FC203-5F18-4C96-B38E-CB7E427AD647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
