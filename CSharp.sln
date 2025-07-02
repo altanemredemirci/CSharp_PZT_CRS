@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_KararYapilar", "05_Karar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Try_Catch", "06_Try_Catch\06_Try_Catch.csproj", "{419FC203-5F18-4C96-B38E-CB7E427AD647}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Donguler", "07_Donguler\07_Donguler.csproj", "{BF4B8611-5300-451C-86A3-1CDA3FCDB11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Bankamatik", "08_Bankamatik\08_Bankamatik.csproj", "{858B04EC-C310-4B43-99AA-D7D0CB978786}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{419FC203-5F18-4C96-B38E-CB7E427AD647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{419FC203-5F18-4C96-B38E-CB7E427AD647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{419FC203-5F18-4C96-B38E-CB7E427AD647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF4B8611-5300-451C-86A3-1CDA3FCDB11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4B8611-5300-451C-86A3-1CDA3FCDB11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4B8611-5300-451C-86A3-1CDA3FCDB11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4B8611-5300-451C-86A3-1CDA3FCDB11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858B04EC-C310-4B43-99AA-D7D0CB978786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858B04EC-C310-4B43-99AA-D7D0CB978786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858B04EC-C310-4B43-99AA-D7D0CB978786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858B04EC-C310-4B43-99AA-D7D0CB978786}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
