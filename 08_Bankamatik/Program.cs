@@ -287,7 +287,30 @@ namespace _08_Bankamatik
                                         }
                                     
                                     }
-                                    else if (transferSecim == "2") { }
+                                    else if (transferSecim == "2") 
+                                    {
+                                        Console.WriteLine("Hesap Numarası 11 haneli");
+                                        string hesapNo = Console.ReadLine();
+
+                                        if (hesapNo.Length == 11 && long.TryParse(hesapNo, out long hesapNumarasi))
+                                        {
+                                            Console.WriteLine("Havale Yapılacak Miktar:");
+                                            int miktar = Convert.ToInt32(Console.ReadLine());
+                                            if (bakiye >= miktar)
+                                            {
+                                                bakiye -= miktar;
+                                                Console.WriteLine("Transfer gerçekleştirildi. Yeni bakiye:" + bakiye);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("Yetersiz bakiye!!");
+                                            }
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Hesap numarası 11 haneli rakamlardan oluşmalıdır!!");
+                                        }
+                                    }
                                     else
                                     {
                                         Console.WriteLine("Hatalı transfer seçimi!!");
@@ -297,9 +320,120 @@ namespace _08_Bankamatik
 
                                 
                                 }
-                                else if (anaSecim == "4") { }
-                                else if (anaSecim == "5") { }
-                                else if (anaSecim == "6") { }
+                                else if (anaSecim == "4") {
+                                    Console.WriteLine("Eğitim ödemeleri bölümü arızalı!!");
+                                }
+                                else if (anaSecim == "5") 
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine("═══════════════════════════════");
+                                    Console.WriteLine("          ÖDEMELER");
+                                    Console.WriteLine("═══════════════════════════════");
+                                    Console.WriteLine("Elektrik Faturası     [1]");
+                                    Console.WriteLine("Telefon Faturası      [2]");
+                                    Console.WriteLine("İnternet Faturası     [3]");
+                                    Console.WriteLine("Su Faturası           [4]");
+                                    Console.WriteLine("OGS Ödemeleri         [5]");                              
+                                    Console.WriteLine("═══════════════════════════════");
+                                    Console.Write("Seçiminiz: ");
+
+                                    string faturaSecim = Console.ReadLine();
+
+                                    if (faturaSecim == "1")
+                                    {
+                                        Console.WriteLine("Fatura tutarınız:");
+                                        double faturaTutar = Convert.ToDouble(Console.ReadLine());
+
+                                        if(bakiye >= faturaTutar)
+                                        {
+                                            bakiye -= faturaTutar;
+                                            Console.WriteLine("Elektrik faturanız ödendi. Yeni bakiye: " + bakiye);
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Yetersiz bakiye!!");
+                                        }
+                                    }
+                                    else if (faturaSecim == "2")
+                                    {
+                                        Console.WriteLine("Fatura tutarınız:");
+                                        double faturaTutar = Convert.ToDouble(Console.ReadLine());
+                                        if (bakiye >= faturaTutar)
+                                        {
+                                            bakiye -= faturaTutar;
+                                            Console.WriteLine("Telefon faturanız ödendi. Yeni bakiye: " + bakiye);
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Yetersiz bakiye!!");
+                                        }
+                                    }
+                                    else if (faturaSecim == "3")
+                                    {
+                                        Console.WriteLine("Fatura tutarınız:");
+                                        double faturaTutar = Convert.ToDouble(Console.ReadLine());
+                                        if (bakiye >= faturaTutar)
+                                        {
+                                            bakiye -= faturaTutar;
+                                            Console.WriteLine("İnternet faturanız ödendi. Yeni bakiye: " + bakiye);
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Yetersiz bakiye!!");
+                                        }
+                                    }
+                                    else if (faturaSecim == "4")
+                                    {
+                                        Console.WriteLine("Fatura tutarınız:");
+                                        double faturaTutar = Convert.ToDouble(Console.ReadLine());
+                                        if (bakiye >= faturaTutar)
+                                        {
+                                            bakiye -= faturaTutar;
+                                            Console.WriteLine("Su faturanız ödendi. Yeni bakiye: " + bakiye);
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Yetersiz bakiye!!");
+                                        }
+                                    }
+                                    else if (faturaSecim == "5")
+                                    {
+                                        Console.WriteLine("OGS ödemesi arızalı!!");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Hatalı Fatura Seçimi!!");
+                                    }
+
+                                }
+                                else if (anaSecim == "6") 
+                                {
+                                    Console.WriteLine("Eski Şifreniz:");
+                                    string eskiSifre = Console.ReadLine();
+
+                                    if(eskiSifre == sifre)
+                                    {
+                                        Console.WriteLine("Yeni şifreniz:");
+                                        string yeniSifre = Console.ReadLine();
+
+                                        Console.WriteLine("Tekrar Yeni Şifre:");
+                                        string tekrarSifre = Console.ReadLine();
+
+                                        if(yeniSifre == tekrarSifre && yeniSifre.Length >= 4)
+                                        {
+                                            sifre = yeniSifre;
+                                            Console.WriteLine("Şifreniz başarıyla güncellendi!!");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Şifreler eşleşmiyor veya 4 karakterden az!!");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Şifreniz hatalı!!");
+                                    }
+                                }
                                 else
                                 {
                                     Console.WriteLine("Hatalı Menü Seçimi!!");

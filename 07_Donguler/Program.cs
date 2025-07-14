@@ -185,7 +185,7 @@ namespace _07_Donguler
             //    Console.WriteLine("Sayı giriniz:");
             //    sayi = Convert.ToInt32(Console.ReadLine());
 
-                
+
             //}
 
             //Console.WriteLine("Toplam:"+toplam);
@@ -199,7 +199,178 @@ namespace _07_Donguler
             #endregion
 
 
+            #region ****** FOR LOOP *******
 
+            //1-10 arasında sayıları ekrana yazdırınız
+
+            //int i = 1;
+            //while (i < 11)
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
+
+            /*
+            0-Başla
+            1-sayaç tanımlanır
+            2-koşul kontrolü(sayaç<11) - True 3 False 5
+            3-kod bloğu çalışır
+            4-sayaç revize -> 2
+            5-Bitir            
+             
+             */
+
+            //for(int i=1; i<11; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            #region Kullanıcının girmiş olduğu ilk 5 pozitif sayıyı toplayınız.
+
+            //int toplam = 0;
+
+            //for (int i = 0; i < 5; i++) //i:0,1,2,3,4
+            //{
+            //    Console.WriteLine("Pozitif sayı giriniz:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //    if (sayi >= 0)
+            //    {
+            //        toplam += sayi;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Negatif girmeyiniz...");
+            //        i--;
+            //    }                
+            //}
+
+            //Console.WriteLine("Toplam="+toplam);
+
+
+
+            //int toplam = 0;
+            //int i = 0;
+            //while (i < 5)
+            //{
+            //    Console.WriteLine("Pozitif sayı giriniz:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //    if (sayi >= 0)
+            //    {
+            //        toplam += sayi;
+            //        i++;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Pozitif Giriniz!!");
+            //    }
+
+            //}
+
+            #endregion
+
+
+            #region Kullanıcıdan alınan başlangıç ve bitiş değerlerinin arasındaki sayılardan 3'ün katı olanları ekrana yazdıran For Loop
+
+            //Console.WriteLine("Başlangıç değeri:");
+            //int basla = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Bitiş değeri:");
+            //int bitis = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = basla; i < bitis; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            #endregion
+            #region Kullanıcıdan alınan bir sayının faktöriyeli hesaplayan for döngüsünü yazınız.
+
+            //5
+
+            //1*2*3*4*5 = 120 5'in faktöriyeli
+
+            //Console.WriteLine("Faktöriyel hesaplanacak Sayıyı Giriniz:");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //int fakt = 1; //çarpma işleminde 1 etkisiz elemandır.
+
+            //for(int i=1; i<=sayi; i++)
+            //{
+            //    fakt = fakt * i;
+            //}
+
+            //Console.WriteLine("Faktöriyel:"+fakt);
+            #endregion
+
+
+            #region 1-500 arasındaki sayıların içinden 13 katlarının sayısını ve toplamlarını hesaplayınız
+
+
+            #endregion
+
+            #region  PASCAL ÜÇGENİ
+            /*
+            
+            *
+            **
+            ***
+            ****
+            *****
+            ******
+            
+
+            Console.Write()  // Yazdıktan sonra alt satıra geçmez
+            Console.WriteLine()  // Yazdıktan sonra alt satıra geçer
+             */
+
+
+            #endregion
+
+            #region KARE
+            /*
+             
+            *********
+            *       *
+            *       *
+            *       *
+            *       *
+            *       *
+            *********
+               
+             */
+            #endregion
+
+            #region Yılbaşı Ağacı
+            /*
+             
+                    *
+                   ***
+                  *****
+                 *******
+                *********
+               ***********
+              
+             */
+
+            #endregion
+
+            #region Çarpım Tablosu
+
+            /*
+             
+            1*1=1  2*1=2 3*1=3 ...
+            1*2=2
+            1*3=3
+            
+             */
+            #endregion
+
+
+            #endregion
 
 
         }
