@@ -287,6 +287,7 @@ namespace _07_Donguler
             //}
 
             #endregion
+
             #region Kullanıcıdan alınan bir sayının faktöriyeli hesaplayan for döngüsünü yazınız.
 
             //5
@@ -309,6 +310,18 @@ namespace _07_Donguler
 
             #region 1-500 arasındaki sayıların içinden 13 katlarının sayısını ve toplamlarını hesaplayınız
 
+            //int toplam = 0;
+
+            //for(int i=1; i<500; i++)
+            //{
+            //    if (i % 13 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //        toplam += i;
+            //    }
+            //}
+
+            //Console.WriteLine("Toplam:"+toplam);
 
             #endregion
 
@@ -320,12 +333,22 @@ namespace _07_Donguler
             ***
             ****
             *****
-            ******
-            
+            ******           
 
             Console.Write()  // Yazdıktan sonra alt satıra geçmez
             Console.WriteLine()  // Yazdıktan sonra alt satıra geçer
              */
+
+            //for(int i=1; i<7; i++)
+            //{
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+
+            //}
+
 
 
             #endregion
@@ -339,14 +362,30 @@ namespace _07_Donguler
             *       *
             *       *
             *       *
+            *       *
+            *       *
+            *       *
             *********
                
              */
+
+            //for (int i = 0; i <10; i++) //10 Adım
+            //{
+            //    if(i==0 || i == 9)
+            //    {
+            //        Console.WriteLine("**********");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("*        *");
+            //    }
+            //}
+
+
             #endregion
 
             #region Yılbaşı Ağacı
-            /*
-             
+            /*             
                     *
                    ***
                   *****
@@ -356,7 +395,56 @@ namespace _07_Donguler
               
              */
 
+            //int bosluk = 5;
+
+            //for (int yildizSayisi = 1; yildizSayisi < 15; yildizSayisi += 2)
+            //{
+            //    for (int k = bosluk; k >= 0; k--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int yildiz = yildizSayisi; yildiz > 0; yildiz--)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    bosluk--;
+            //    Console.WriteLine();
+            //}
+
+
+
             #endregion
+
+            #region Ters Çam Ağacı
+            /*
+          *************
+           ***********
+            *********
+             *******
+              *****
+               ***
+                *
+
+          */
+
+            //int bosluk = 0;
+
+            //for (int i = 15; i >0; i-=2)
+            //{
+            //    for (int j = 0; j < bosluk; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int k = i; k > 0; k--)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    bosluk++;
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+
 
             #region Çarpım Tablosu
 
@@ -367,8 +455,124 @@ namespace _07_Donguler
             1*3=3
             
              */
+
+            //for (int i = 1; i < 11; i++)
+            //{
+            //    for (int j = 1; j < 11; j++)
+            //    {
+            //        Console.Write(j+"x"+i+"="+(i*j)+"\t");
+            //    }
+            //    Console.WriteLine();
+            //}
             #endregion
 
+
+            #region Kullanıcının girmiş olduğu sayının asal olup olmadığını ekrana yazdıran döngü.
+            //Asal sayı 1 ve kendisi dışında hiç bir sayıya bölünmeyen sayıdır. 
+            //1 ve altındaki sayılar asal değildir.
+            //2 en küçük asal sayıdır.
+
+
+            #endregion
+
+            #region 1 ile 1000000 arasındaki asal sayıları ekrana yazdıran döngü.
+
+            #endregion
+
+
+            #endregion
+
+
+            #region ****** DO-WHILE ******
+
+            //int i = 0;
+
+            //while (i < 10)
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
+
+
+            //int j = 0;
+            //do
+            //{
+
+            //    Console.WriteLine(j);
+            //    j++;
+
+            //} while (j < 10);
+
+
+            #region Kullanıcı 0 girene kadar girilen sayıları toplayarak ekrana yazdırınız.
+
+            //int toplam = 0;
+            //while (true)
+            //{
+            //    Console.WriteLine("Sayı giriniz:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //    if (sayi == 0)
+            //        break;
+
+            //    toplam += sayi;
+            //}
+            //Console.WriteLine("Toplam:"+toplam);
+
+
+
+
+
+            //Console.WriteLine("Sayı giriniz:");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //int toplam = 0;
+
+            //while (sayi != 0)
+            //{
+            //    toplam += sayi;
+
+            //    Console.WriteLine("Sayı giriniz:");
+            //    sayi = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("Toplam:" + toplam);
+
+
+
+
+            //int toplam = 0;
+            //do
+            //{
+            //    Console.WriteLine("Sayı giriniz:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //    if(sayi==0)
+            //        break;
+
+            //    toplam += sayi;
+
+            //} while (true);
+
+            //Console.WriteLine("Toplam:" + toplam);
+
+
+
+
+            //int sayi;
+            //int toplam = 0;
+            //do
+            //{
+            //    Console.WriteLine("Sayı giriniz:");
+            //    sayi= Convert.ToInt32(Console.ReadLine());
+
+
+            //    toplam += sayi;
+
+            //} while (sayi!=0);
+
+            //Console.WriteLine("Toplam:" + toplam);
+            #endregion
 
             #endregion
 
