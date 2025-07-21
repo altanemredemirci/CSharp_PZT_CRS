@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Bankamatik", "08_Bankama
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Random", "09_Random\09_Random.csproj", "{A04F4D9A-D70F-4585-BCBB-ACEB391D734C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Arrays", "10_Arrays\10_Arrays.csproj", "{DA96B69C-2994-4D98-BAED-11BF8D201ACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{A04F4D9A-D70F-4585-BCBB-ACEB391D734C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A04F4D9A-D70F-4585-BCBB-ACEB391D734C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A04F4D9A-D70F-4585-BCBB-ACEB391D734C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA96B69C-2994-4D98-BAED-11BF8D201ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA96B69C-2994-4D98-BAED-11BF8D201ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA96B69C-2994-4D98-BAED-11BF8D201ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA96B69C-2994-4D98-BAED-11BF8D201ACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

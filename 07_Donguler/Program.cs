@@ -472,11 +472,76 @@ namespace _07_Donguler
             //1 ve altındaki sayılar asal değildir.
             //2 en küçük asal sayıdır.
 
+            //Console.WriteLine("Bir sayı giriniz");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //bool asalMi = true; //Asal mı?
+
+            //if (sayi <= 1)
+            //{
+            //    asalMi = false;
+            //}
+            //else if (sayi == 2)
+            //{
+            //    asalMi = true;
+            //}
+            //else
+            //{
+            //    for (int i = 2; i < sayi; i++) //i: Bölen  sayi=50
+            //    {
+            //        if (sayi % i == 0)
+            //        {
+            //            asalMi = false;
+            //            break;
+            //        }
+            //    }
+            //}
+
+            //if (asalMi)
+            //{
+            //    Console.WriteLine("Asaldır");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Asal Değildir");
+            //}
+
 
             #endregion
 
             #region 1 ile 1000000 arasındaki asal sayıları ekrana yazdıran döngü.
 
+            for (int sayi = 1; sayi < 10000000; sayi++)
+            {
+                bool asalMi = true; //Asal mı?
+
+                if (sayi <= 1)
+                {
+                    asalMi = false;
+                }
+                else if (sayi == 2)
+                {
+                    asalMi = true;
+                }
+                else
+                {
+                    for (int i = 2; i < sayi; i++) //i: Bölen  sayi=50
+                    {
+                        if (sayi % i == 0)
+                        {
+                            asalMi = false;
+                            break;
+                        }
+                    }
+                }
+
+                if (asalMi)
+                {
+                    Console.WriteLine(sayi);
+                }
+            }
+
+           
             #endregion
 
 
