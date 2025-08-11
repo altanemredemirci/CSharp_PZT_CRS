@@ -1,4 +1,6 @@
-﻿namespace _12_Methods
+﻿using System.Net.Http.Headers;
+
+namespace _12_Methods
 {
     internal class Program
     {
@@ -36,9 +38,10 @@
             //Toplam();
 
 
-            int toplam= Toplam();
+            //int toplam= Toplam();
 
-            Console.WriteLine(toplam);
+            //Console.WriteLine(toplam);                      
+
         }
 
         //static void Toplam()
