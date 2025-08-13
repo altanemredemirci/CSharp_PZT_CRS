@@ -9,21 +9,23 @@ namespace _11_ArrayList
             // Array aksine veritipi sınırlaması olmayan ve eleman sayısı belirtilmeden tanımlanır.
             //ArrayList tanımlarken using System.Collections; kütüphanesi kullanılır.
 
-            //ArrayList arrayList = new ArrayList();
-
+            ArrayList arrayList = new ArrayList();
+          
             //Eleman ekleme
-            //arrayList.Add(10);
-            //arrayList.Add("Altan");
-            //arrayList.Add('?');
-            //arrayList.Add(10.5);
-            //arrayList.Add(10.5m);
-            //arrayList.Add(10.5f);
+            arrayList.Add(10);
+            arrayList.Add("Altan");
+            arrayList.Add('?');
+            arrayList.Add(10.5);
+            arrayList.Add(10.5m);
+            arrayList.Add(10.5f);
+
+            arrayList.Insert(2, "Tuğçe");
 
             //*** Eleman yazdırma ***
-            //for (int i = 0; i < arrayList.Count; i++)
-            //{
-            //    Console.WriteLine(arrayList[i]);
-            //}
+            for (int i = 0; i < arrayList.Count; i++)
+            {
+                Console.WriteLine(arrayList[i]);
+            }
 
 
 

@@ -1,9 +1,13 @@
-﻿namespace _01_Algoritmalar
+﻿
+using _12_Methods;
+
+namespace _01_Algoritmalar
 {
     internal class Program
     {
         static void Main(string[] args) //Metot:Proje içerisinde event tetikler.
         {
+            
             /*
              Çoklu yorum satırı(comment /*)  
             
