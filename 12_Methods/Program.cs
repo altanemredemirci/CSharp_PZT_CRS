@@ -173,30 +173,106 @@ namespace _12_Methods
 
             #region SORU5:Rastgele 1-100 arasında 15 değer tutan bir dizideki tek ve çiftleri ayrı ayrı dizilere atayan metot 
 
-            int[] sayilar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+            //int[] sayilar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 
-            int[] ciftsayilar = new int[10];
-            int[] teksayilar = new int[10];
+            //int[] ciftsayilar = new int[10];
+            //int[] teksayilar = new int[10];
 
-            TekCiftKontrol(sayilar, teksayilar, ciftsayilar);
+            //TekCiftKontrol(sayilar, teksayilar, ciftsayilar);
 
-            foreach (var item in teksayilar)
-            {
-                Console.Write(item+" ");
-            }
-            Console.WriteLine();
-            foreach (var item in ciftsayilar)
-            {
-                Console.Write(item + " ");
-            }
-
-            #endregion
+            //foreach (var item in teksayilar)
+            //{
+            //    Console.Write(item+" ");
+            //}
+            //Console.WriteLine();
+            //foreach (var item in ciftsayilar)
+            //{
+            //    Console.Write(item + " ");
+            //}
 
             #endregion
 
+            #endregion
+
+            #region OVERLOAD METOTLAR - AŞIRI YÜKLENMİŞ
+
+            //Birden fazla metot aynı isimle tanımlanamaz. Eğer metotlar benzer işleri yapıyor ve aynı isimle tanımlanmasını istiyorsak overload yapmamız gereklidir.
+
+            //Overload olması için METOT İMZALARI FARKLI OLMALIDIR.
+            //Metot İmzası:
+            //      * Parametre Sayısı
+            //      * Parametre Veri Tipi
+
+            //Topla();
+            //Topla(11, 12);
+            //Topla(11, 12, 13);
+
+            #endregion
+
+            #region DEFAULT DEĞER
+
+            //AlanHesapla(5,5,3.20);
+
+            //AlanHesapla(10,7);
+
+
+            #endregion
+
+            #region PARAMS, OUT, REF
+
+            #region PARAMS
+            //Params anahtar kelimesi, bir methoda değişken argümanın aynı tipte geçirilmesine olanak tanır.
+            //params parametresi, metodun son parametresi olarak tanımlanmalıdır ve yalnızca bir params anahtar kelimesi kullanılabilir.
+            //params ile belirtilen parametre bir dizi olarak işlenir, bu da metod içinde bir dizi erişilebileceği ve üzerinde işlem yapılabileceği anlamına gelir.
+
+            //int[] rakams = { 1, 2, 3 };
+            //int[] rakams2 = {1,2,3,4};
+            //int[] rakams3 = {1,2,3,4,5 };
+
+            ////DiziYazdir(rakams);
+            ////DiziYazdir(rakams2);
+            ////DiziYazdir(rakams3);
+
+            //DiziYazdir2(1, 2, 3, 4,5,6);
+
+            //DiziYazdir3("Altan Emre", 1, 3, 4);
+            #endregion
+
+            #region OUT
+            //parametre olarak gönderilen değişkenin metot içinde manipüle olmasını sağlar. Bu sayede metot dışarıdan(out) gelen değeri değiştirebilir.
+            // ** out kullanılacak değişkene ilk tanımlama da değer atanması zorunlu değildir ama out kullanıldıysa metot içerisinde mutlaka değer atanmalıdır.
 
 
 
+            //Console.WriteLine("1.Sayı:");
+            //string s = Console.ReadLine();
+            //int sayi;
+
+            //if(int.TryParse(s, out sayi))
+            //{
+            //    Console.WriteLine(sayi);
+            //}
+            //else
+            //{
+
+            //}
+
+            //TryPars(s, out sayi); //parametre olarak gönderilen değişkenin işlem sonucunda değişmesi için out veya ref keywordleri kullanılmalıdır.
+            //Console.WriteLine("SAYİ:"+sayi);
+
+
+            #endregion
+
+            #region REF
+
+            Console.WriteLine("1.Sayı:");
+            string s = Console.ReadLine();
+            int sayi=5;
+
+            TryPars(s, ref sayi); //parametre olarak gönderilen değişkenin işlem sonucunda değişmesi için out veya ref keywordleri kullanılmalıdır.
+            Console.WriteLine("SAYİ:" + sayi);
+            #endregion
+            #endregion
 
         }
 
@@ -312,7 +388,7 @@ namespace _12_Methods
 
         #region CEVAP4:
 
-        static void DiziDoldur(int[] dizi,int adet,int basla, int bitis)
+        static void DiziDoldur(int[] dizi, int adet, int basla, int bitis)
         {
             Random r = new Random();
 
@@ -345,7 +421,7 @@ namespace _12_Methods
                 Console.WriteLine(item);
             }
         }
-       
+
         static int[] DiziDoldurParametresizDonduren()
         {
             Console.WriteLine("Kaç adet sayı olacak?");
@@ -370,30 +446,153 @@ namespace _12_Methods
         #endregion
 
         #region CEVAP5:
-        static void TekCiftKontrol(int[] list, int[] tlist, int[] clist)
-        {
-            int index = 0;
-            for (int i = 0; i < list.Length; i++)
-            {
-                if (list[i] % 2 == 0)
-                {
-                    clist[index] = list[i];
-                    index++;
-                }
-            }
+        //static void TekCiftKontrol(int[] list, int[] tlist, int[] clist)
+        //{
+        //    int index = 0;
+        //    for (int i = 0; i < list.Length; i++)
+        //    {
+        //        if (list[i] % 2 == 0)
+        //        {
+        //            clist[index] = list[i];
+        //            index++;
+        //        }
+        //    }
 
-            int index2 = 0;
-            for (int i = 0; i < list.Length; i++)
+        //    int index2 = 0;
+        //    for (int i = 0; i < list.Length; i++)
+        //    {
+        //        if (list[i] % 2 != 0)
+        //        {
+        //            tlist[index2] = list[i];
+        //            index2++;
+        //        }
+        //    }
+        //}
+
+        #endregion
+
+        #region OVERLOAD METHOD
+
+        //static void Topla()
+        //{
+        //    Console.WriteLine("1.Sayı:");
+        //    int sayi1 = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("2.Sayı:");
+        //    int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("Toplam:"+(sayi1+sayi2));
+        //}
+
+        //static void Topla(int s1,int s2,int s3)
+        //{
+        //    Console.WriteLine(s1+s2+s3);
+        //}
+        //static void Topla(int s1, int s2)
+        //{
+        //    Console.WriteLine(s1 + s2);
+        //}
+
+        //static void Topla(int s1, double s2)
+        //{
+        //    Console.WriteLine(s1 + s2);
+        //}
+
+        //static void Topla(double s1, int s2)
+        //{
+        //    Console.WriteLine(s1 + s2);
+        //}
+
+        // Değer döndürme tanımı bir metot imzası değildir.
+        //static int Topla(int s1, int s2)
+        //{
+        //    return s1 + s2;
+        //}
+
+        #endregion
+
+        #region DEFAULT DEĞER
+        //Default değer atama işlemi sayesinde bir değer gönderilmez ise parametre tanım satırındaki değer default olarak alınır.
+        //static void AlanHesapla(int h, int r, double pi=3.14)
+        //{
+        //    Console.WriteLine(h*r*pi);
+        //}
+
+
+        #endregion
+
+        #region PARAMS
+
+        //static void DiziYazdir(int[] sayilar)
+        //{
+        //    foreach (int item in sayilar)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
+
+        //static void DiziYazdir2(params int[] sayilar)
+        //{
+        //    foreach (int item in sayilar)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
+
+        //static void DiziYazdir3(string ad, params int[] sayilar)
+        //{
+        //    Console.WriteLine(ad);
+
+        //    foreach (int item in sayilar)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
+
+
+        #endregion
+
+
+        #region OUT
+
+        //static bool TryPars(string s, out int sayi)
+        //{
+        //    try
+        //    {
+        //        sayi = Convert.ToInt32(s);
+                
+        //        return true;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        sayi = default;
+                
+        //        return false;
+        //    }
+        //}
+
+        #endregion
+
+
+        #region REF
+
+        static bool TryPars(string s, ref int sayi)
+        {
+            try
             {
-                if (list[i] % 2 != 0)
-                {
-                    tlist[index2] = list[i];
-                    index2++;
-                }
+                sayi = Convert.ToInt32(s);
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
 
         #endregion
+
+
     }
 
     //public class Matematik //classa erişim belirteci verilmez ise default INTERNAL alır.
