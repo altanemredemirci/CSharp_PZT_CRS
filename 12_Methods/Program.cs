@@ -55,7 +55,7 @@ namespace _12_Methods
             //mat.Cikarma();
 
 
-            //Static 
+            ////Static 
             //Matematik.Carpma();
 
 
@@ -86,7 +86,7 @@ namespace _12_Methods
             //    Console.WriteLine("2.Sayıyı giriniz:");
             //    int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-            //    Matematik.Bolme(sayi1,sayi2);
+            //    Matematik.Bolme(sayi1, sayi2);
             //}
 
             #endregion
@@ -141,7 +141,7 @@ namespace _12_Methods
 
             #region SORU4:Kullanıcıdan alınan aralıkta, kullanıcının istediği kadar rastgele sayı ile diziyi dolduran metot 
 
-            //1.Yol 
+            ////1.Yol 
             //Console.WriteLine("Kaç adet sayı olacak?");
             //int adet = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine("Başlangıç?");
@@ -151,7 +151,7 @@ namespace _12_Methods
 
             //int[] sayilar = new int[adet];
 
-            //DiziDoldur(sayilar,adet,basla,bitis);
+            //DiziDoldur(sayilar, adet, basla, bitis);
 
             //foreach (var item in sayilar)
             //{
@@ -265,16 +265,29 @@ namespace _12_Methods
 
             #region REF
 
-            Console.WriteLine("1.Sayı:");
-            string s = Console.ReadLine();
-            int sayi=5;
+            //Console.WriteLine("1.Sayı:");
+            //string s = Console.ReadLine();
+            //int sayi=5;
 
-            TryPars(s, ref sayi); //parametre olarak gönderilen değişkenin işlem sonucunda değişmesi için out veya ref keywordleri kullanılmalıdır.
-            Console.WriteLine("SAYİ:" + sayi);
+            //TryPars(s, ref sayi); //parametre olarak gönderilen değişkenin işlem sonucunda değişmesi için out veya ref keywordleri kullanılmalıdır.
+            //Console.WriteLine("SAYİ:" + sayi);
             #endregion
             #endregion
+
+
+            Console.WriteLine("Bir sayı giriniz:");
+            string value = Console.ReadLine();
+            
+            int sayi;
+
+            int.TryParse(value, out sayi);
+
+            Console.WriteLine(sayi);
+
 
         }
+
+    
 
 
         #region CEVAP1:
@@ -296,22 +309,22 @@ namespace _12_Methods
 
         //    if (cevap == "E")
         //    {
-        //        Indirim3(fiyat1,fiyat2);
+        //        Indirim3(fiyat1, fiyat2);
         //    }
         //    else
         //    {
-        //        Console.WriteLine("Ödemeniz:"+(fiyat1+fiyat2));
+        //        Console.WriteLine("Ödemeniz:" + (fiyat1 + fiyat2));
         //    }
 
         //}
-        //static void Indirim3(double f1,double f2)
+        //static void Indirim3(double f1, double f2)
         //{
         //    Console.WriteLine("3.Ürün Fiyatı:");
         //    double fiyat3 = Convert.ToDouble(Console.ReadLine());
 
         //    fiyat3 = fiyat3 / 2;
 
-        //    Console.WriteLine("Ödemeniz:"+(f1+f2+fiyat3));
+        //    Console.WriteLine("Ödemeniz:" + (f1 + f2 + fiyat3));
         //}
 
 
@@ -334,12 +347,12 @@ namespace _12_Methods
         //    Console.WriteLine("3. ürünü %50 indirimli almak ister misiniz?(E/H)");
         //    string cevap = Console.ReadLine().ToUpper();
 
-        //    double fiyat3 = 0;
-        //    if (cevap == "E")
-        //    {
-        //        fiyat3 = Indirim3();
-        //    }
-        //    Console.WriteLine("Ödemeniz:" + (fiyat3 + fiyat2 + fiyat1));
+        //    //double fiyat3 = 0;
+        //    //if (cevap == "E")
+        //    //{
+        //    //    fiyat3 = Indirim3();
+        //    //}
+        //    //Console.WriteLine("Ödemeniz:" + (fiyat3 + fiyat2 + fiyat1));
 
 
         //    if (cevap == "E")
@@ -511,11 +524,42 @@ namespace _12_Methods
 
         #endregion
 
+        #region OVERLOAD METHOD
+        //static void Yaz()
+        //{
+        //    Console.WriteLine("Altan Emre");
+        //}
+
+        //static void Yaz(string ad)
+        //{
+        //    Console.WriteLine(ad);
+        //}
+        //static void Yaz(string ad, string soyad)
+        //{
+        //    Console.WriteLine(ad);
+        //}
+
+        //static void Yaz(string ad, double yas)
+        //{
+        //    Console.WriteLine(ad);
+        //}
+
+        //static void Yaz(double ad, string yas)
+        //{
+        //    Console.WriteLine(ad);
+        //}
+        #endregion
+
+
         #region DEFAULT DEĞER
         //Default değer atama işlemi sayesinde bir değer gönderilmez ise parametre tanım satırındaki değer default olarak alınır.
         //static void AlanHesapla(int h, int r, double pi=3.14)
         //{
         //    Console.WriteLine(h*r*pi);
+        //}
+        //static void Yaz(string ad = "Altan")
+        //{
+        //    Console.WriteLine(ad);
         //}
 
 
@@ -552,7 +596,6 @@ namespace _12_Methods
 
         #endregion
 
-
         #region OUT
 
         //static bool TryPars(string s, out int sayi)
@@ -560,13 +603,13 @@ namespace _12_Methods
         //    try
         //    {
         //        sayi = Convert.ToInt32(s);
-                
+
         //        return true;
         //    }
         //    catch (Exception)
         //    {
         //        sayi = default;
-                
+
         //        return false;
         //    }
         //}

@@ -119,9 +119,6 @@ namespace _11_ManavOtomasyonu
                     break;
                 }
             }
-
-
-
         }
 
         static void HalUrunSec(ArrayList halListe,ArrayList manavListe, ArrayList manavKilo)
