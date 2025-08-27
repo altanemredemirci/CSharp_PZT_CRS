@@ -14,7 +14,48 @@ namespace _13_List
         //private:Sadece kendi tanımlı olduğu class içinde erişilebilir.
         
         //Default olarak private tanımlıdır
-        public string ad;
-        public int yas;
+        public string Ad;
+        public string Soyad;
+        public int Numara;
+
+
+        //Parametreli Değer Döndürmeyen Metot
+        public static void Kayit1(List<Ogrenci> liste)
+        {
+
+            Ogrenci ogr = new Ogrenci();
+
+            Console.WriteLine("Öğrenci Numarası:");
+            ogr.Numara = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Öğrenci Adı:");
+            ogr.Ad = Console.ReadLine();
+
+            Console.WriteLine("Öğrenci Soyadı:");
+            ogr.Soyad = Console.ReadLine();
+
+            liste.Add(ogr);
+
+        }
+
+        //Parametresiz Değer Döndüren Metot
+        public static Ogrenci Kayit2()
+        {
+
+            Ogrenci ogr = new Ogrenci();
+
+            Console.WriteLine("Öğrenci Numarası:");
+            ogr.Numara = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Öğrenci Adı:");
+            ogr.Ad = Console.ReadLine();
+
+            Console.WriteLine("Öğrenci Soyadı:");
+            ogr.Soyad = Console.ReadLine();
+
+            return ogr;
+
+        }
+
     }
 }

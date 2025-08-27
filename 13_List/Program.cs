@@ -34,69 +34,83 @@ namespace _13_List
             #region Ogrenci 
 
             // Bir ilkokul öğrenci kayıt sistemini yazınız.
-            // her öğrencinin ad ve yas bilgileri kayıt edilecek
+            // her öğrencinin ad,soyad ve numara bilgileri kayıt edilecek
 
-            //Instance - Örneklem
-            //Ogrenci ogrenci = new Ogrenci();
+            List<Ogrenci> ogrenciler = new List<Ogrenci>();
 
-            //ogrenci.ad = "Ahmet";
-            //ogrenci.yas = 13;
+            Ogrenci.Kayit1(ogrenciler);
+                                       
 
-            //Ogrenci ogrenci2 = new Ogrenci();
-
-            //ogrenci2.ad = "Meltem";
-            //ogrenci2.yas = 13;
-
-            //Ogrenci ogrenci3 = new Ogrenci();
-
-            //ogrenci3.ad = "Beyza";
-            //ogrenci3.yas = 13;
-
-
-            //List<Ogrenci> ogrenciler = new List<Ogrenci>();
-
-            //ogrenciler.Add(ogrenci);
-            //ogrenciler.Add(ogrenci2);
-            //ogrenciler.Add(ogrenci3);
-
-
+            ogrenciler.Add(Ogrenci.Kayit2());
             #endregion
 
 
+            #region Uye
             //Bir Üyelik sisteminde kullanıcı adı, şifre ve ad soyad tutulacak.
             //Kullanıcı giriş yapmak istediğinde kullanıcı adı ve şifre ile giriş yapılacak;
 
             List<Uye> uyeler = new List<Uye>();
 
-            for (int i = 0; i < 3; i++)
-            {
-                Uye uye = new Uye(); // uye bir nesnedir ve tanımlı olduğu sınıfın özelliklerini taşır
+            #region Eski Yol
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Uye uye = new Uye(); // uye bir nesnedir ve tanımlı olduğu sınıfın özelliklerini taşır
 
-                Console.WriteLine("Username:");
-                uye.Username = Console.ReadLine();
+            //    Console.WriteLine("Username:");
+            //    uye.Username = Console.ReadLine();
 
-                Console.WriteLine("Password:");
-                uye.Password = Console.ReadLine();
+            //    Console.WriteLine("Password:");
+            //    uye.Password = Console.ReadLine();
 
-                Console.WriteLine("NameSurname:");
-                uye.NameSurname = Console.ReadLine();
+            //    Console.WriteLine("NameSurname:");
+            //    uye.NameSurname = Console.ReadLine();
 
-                uyeler.Add(uye);
-            }
+            //    uyeler.Add(uye);
+            //}
 
-            Console.WriteLine("Kullanıcı adınız:");
-            string kullaniciadi = Console.ReadLine();
 
-            Console.WriteLine("Şifreniz:");
-            string sifre = Console.ReadLine();
 
-            foreach (Uye uye in uyeler)
-            {
-                if(uye.Username==kullaniciadi && uye.Password == sifre)
-                {
-                    Console.WriteLine(uye.NameSurname);
-                }
-            }
+
+
+
+            //Console.WriteLine("Kullanıcı adınız:");
+            //string kullaniciadi = Console.ReadLine();
+
+            //Console.WriteLine("Şifreniz:");
+            //string sifre = Console.ReadLine();
+
+            //foreach (Uye uye in uyeler)
+            //{
+            //    if(uye.Username==kullaniciadi && uye.Password == sifre)
+            //    {
+            //        Console.WriteLine(uye.NameSurname);
+            //    }
+            //}
+            #endregion
+
+            //while (true)
+            //{
+            //    Console.WriteLine("1-Üye Ol\n2-Giriş Yap\n3-Liste\nSeçiminiz:");
+            //    int secim = Convert.ToInt32(Console.ReadLine());
+
+
+            //    if (secim == 1)
+            //    {
+            //        Uye.KayitOl(uyeler);
+            //    }
+            //    else if (secim == 2)
+            //    {
+            //        Uye girisYapanUye = Uye.GirisYap(uyeler);
+            //        Console.WriteLine(girisYapanUye.NameSurname);
+
+            //        Console.WriteLine(girisYapanUye.Username);
+            //    }
+            //    else if (secim == 3)
+            //    {
+            //        Uye.Listele(uyeler);
+            //    }
+            //}
+            #endregion
 
 
         }
