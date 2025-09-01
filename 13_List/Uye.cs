@@ -8,14 +8,15 @@ namespace _13_List
 {
     internal class Uye
     {
-        public string Username;
+        public string Username; //Uye classına ait propertyler
         public string Password;
         public string NameSurname;
 
         public static void KayitOl(List<Uye> liste)
         {
+            //Instance - Örnek
             Uye uye = new Uye(); // uye bir nesnedir ve tanımlı olduğu sınıfın özelliklerini taşır
-
+            
             Console.WriteLine("Username:");
             uye.Username = Console.ReadLine();
 
