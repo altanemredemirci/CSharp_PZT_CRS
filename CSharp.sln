@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_ManavOtomasyonu", "13_Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Class_Object_Method", "14_Class_Object_Method\14_Class_Object_Method.csproj", "{BC1A3AC9-7A32-4643-82CE-59320D8A6446}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Class_Object_Method_2", "14_Class_Object_Method_2\14_Class_Object_Method_2.csproj", "{E99FDA8A-C38D-4F4F-9860-E823E3E3DEE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Class_Object_Method_1", "14_Class_Object_Method_1\14_Class_Object_Method_1.csproj", "{1172232D-FE65-4CDB-BAC1-B467E24C5D7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{BC1A3AC9-7A32-4643-82CE-59320D8A6446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC1A3AC9-7A32-4643-82CE-59320D8A6446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC1A3AC9-7A32-4643-82CE-59320D8A6446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99FDA8A-C38D-4F4F-9860-E823E3E3DEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99FDA8A-C38D-4F4F-9860-E823E3E3DEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99FDA8A-C38D-4F4F-9860-E823E3E3DEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99FDA8A-C38D-4F4F-9860-E823E3E3DEE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1172232D-FE65-4CDB-BAC1-B467E24C5D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1172232D-FE65-4CDB-BAC1-B467E24C5D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1172232D-FE65-4CDB-BAC1-B467E24C5D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1172232D-FE65-4CDB-BAC1-B467E24C5D7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
