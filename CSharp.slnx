@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="01_Algoritma/01_Algoritma.csproj" />
+  <Project Path="02_Degiskenler_VeriTipleri/02_Degiskenler_VeriTipleri.csproj" />
+  <Project Path="03_TurDonusumleri/03_TurDonusumleri.csproj" Id="326355c5-f8f0-4df5-9abd-8c329ceab7b0" />
+  <Project Path="04_Operatorler/04_Operatorler.csproj" Id="2b6be51c-e210-45cd-9dc4-ef1fb24c455e" />
+  <Project Path="05_Karar_Yapilari/05_Karar_Yapilari.csproj" Id="ff902f86-3bde-4e1a-b8c8-f33705f14cef" />
+  <Project Path="06_Bankamatik/06_Bankamatik.csproj" Id="21e0f3d6-8ce6-415f-947e-25f01cb1bfe3" />
+  <Project Path="07_StringMetotlar_DateTime/07_StringMetotlar_DateTime.csproj" Id="6514c71b-9e30-49a1-ae20-704b54b39696" />
+  <Project Path="08_Donguler/08_Donguler.csproj" Id="2cf8bbb7-97c2-4c51-8df0-ce5b02aa20ff" />
+</Solution>
