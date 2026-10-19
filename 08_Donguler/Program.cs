@@ -108,7 +108,6 @@
             //    i++;
             //}
 
-
             //continue: Döngü continue komutunu okuduğu satırdan koşul satırına geri döner.
 
             //int i = 1;
@@ -232,28 +231,301 @@
 
             #region Başlangıç ve bitiş değerini kullanıcıdan aldığınız ve aralıktaki sayıları ekrana yazdırdığınız for döngüsüni yazınız.
 
-            Console.WriteLine("Başlangıc: ");
-            int baslangic = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Başlangıc: ");
+            //int baslangic = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Bitis: ");
-            int bitis = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Bitis: ");
+            //int bitis = Convert.ToInt32(Console.ReadLine());
 
-            if (baslangic > bitis)
-            {
-                int temp = baslangic;
-                baslangic = bitis;
-                bitis = temp;
-            }
+            //if (baslangic > bitis)
+            //{
+            //    int temp = baslangic;
+            //    baslangic = bitis;
+            //    bitis = temp;
+            //}
 
-            for (int i = baslangic; i <= bitis; i++)
-            {
-                Console.WriteLine(i);
-            }
+            //for (int i = baslangic; i <= bitis; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            #endregion
+            #region Kullanıcının girmiş olduğu sayının faktöriyelinin hesaplayan for döngüsünü yazınız
+
+            //5 => 1*2*3*4*5=120
+
+            //Console.WriteLine("sayi : ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //int faktoriyel = 1;
+
+            //for (int i = 1; i <= sayi; i++)
+            //{
+            //    faktoriyel = faktoriyel * i;
+            //}
+
+            //Console.WriteLine(faktoriyel);
+
+            #endregion
+
+            #region 1-500 aralığındaki 13'ün katı olan kaç adet sayı vardır ve toplamları nedir?
+
+            //int toplam = 0;
+            //int sayac = 0;
+
+            //for (int i = 1; i <= 500; i++)
+            //{
+            //    if (i % 13 == 0)
+            //    {
+            //        sayac++;
+            //        toplam += i;
+            //    }
+
+            //}
+
+            //Console.WriteLine(sayac);
+            //Console.WriteLine(toplam);
+
 
             #endregion
 
 
             #endregion
+
+            #region ******** RANDOM ********
+
+            //Belirtilen aralıkta rastgele int tipinde sayı üretir.
+
+            //Random r = new Random(); //Random classından bir nesne (örneklem) üretildi.
+
+            //int rastgele = r.Next();
+
+            //int rastgele = r.Next(100);
+
+            //int rastgele = r.Next(5,10);
+
+
+            //Console.WriteLine(rastgele);
+
+            #region Bilgisayar 1-100 aralığında bir rastgele sayı üretsin. Kullanıcı 5 hak da bu sayıyı tahmin etmeye çalışsın. Bu haklarda "Lütfen tahmininizi büyültünüz" veya "Lütfen tahmininizi küçültünüz" gibi yönlendirmeler yapılsın. 5 hakkı bittiğinde "Hakkınız Bitti" mesajını yazdırılsın.
+
+            //Random r = new Random();
+            //int rastgele = r.Next(1, 100);
+            //Console.WriteLine(rastgele);
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine("tahmin:");
+            //    int tahmin = Convert.ToInt32(Console.ReadLine());
+
+            //    if (tahmin == rastgele)
+            //    {
+            //        Console.WriteLine("OLLEY BİLDİNİZ");
+            //        break;
+            //    }
+
+            //    else if (i == 4)
+            //    {
+            //        Console.WriteLine("Hakkınız bitti maalesef ");
+            //    }
+
+            //    else if (tahmin < rastgele)
+            //    {
+            //        Console.WriteLine("Lütfen tahmininizi büyütün ");
+            //    }
+
+            //    else
+            //    {
+            //        Console.WriteLine("Lütfen tahmininizi küçültün");
+            //    }              
+
+            //}
+
+
+            #endregion
+
+
+
+            #endregion
+
+
+            #region Aşağıdaki şekilleri for döngüsü ile oluşturunuz
+
+            /*
+             
+            *
+            **
+            ***
+            ****
+            *****
+            ******
+            *******
+            */
+
+            //for (int i = 1; i < 8; i++)
+            //{
+            //    for (int j = i; j >0 ; j--)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+
+
+            /*
+            *****************
+            *               *
+            *               *
+            *               *
+            *               *
+            *               *
+            *****************
+            */
+
+            //for (int i = 0; i < 7; i++)
+            //{
+            //    if (i == 0 || i == 6)
+            //    {
+            //        Console.WriteLine("****************");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("*              *");
+            //    }
+            //}
+
+
+
+            /*
+
+
+                    *
+                   ***
+                  *****
+                 *******
+                *********
+               ***********          
+             */
+            //int bosluk = 10;
+
+            //for (int i = 1; i < 12; i+=2)
+            //{
+            //    for (int j = 0; j < bosluk; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int yildiz = 0; yildiz < i; yildiz++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //    bosluk--;
+            //}
+
+
+
+
+
+            /*
+
+
+               ***********
+                *********
+                 *******
+                  *****
+                   ***                
+                    *
+                   ***
+                  *****
+                 *******
+                *********
+               ***********          
+
+
+             
+             */
+            //int bosluk2 = 0;
+
+            //for (int i = 13; i >0; i -= 2)
+            //{
+            //    for (int j = bosluk2; j > 0; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int yildiz = i; yildiz > 0; yildiz--)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //    bosluk2++;
+            //}
+
+            //int bosluk = 6;
+
+            //for (int i = 1; i < 12; i += 2)
+            //{
+            //    for (int j = 0; j < bosluk; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int yildiz = 0; yildiz < i; yildiz++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //    bosluk--;
+            //}
+
+
+
+            int toplamSatir = 12;
+            for (int satir = 0; satir <= toplamSatir; satir++)
+            {
+                int bosluk, yildiz;
+
+                if (satir < 7)
+                {
+                    bosluk = satir;
+                    yildiz = 13 - (2 * satir);
+                }
+                else
+                {
+                    bosluk = 12 - satir;
+                    yildiz = (2 * (satir - 6)) + 1;
+                }
+
+                for (int i = 0; i < bosluk; i++)
+                {
+                    Console.Write(" ");
+                }
+                for (int i = 0; i < yildiz; i++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+
+
+            /*
+             
+             1x1=1  2x1=2  .... ....  10x1=10
+             1x2=2  2x2=4
+             ..
+            ...
+            ..
+             1x10=10          
+
+
+
+             */
+
+
+
+            #endregion
+
         }
     }
 }
