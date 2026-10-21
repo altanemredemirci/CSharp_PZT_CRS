@@ -7,4 +7,5 @@
   <Project Path="06_Bankamatik/06_Bankamatik.csproj" Id="21e0f3d6-8ce6-415f-947e-25f01cb1bfe3" />
   <Project Path="07_StringMetotlar_DateTime/07_StringMetotlar_DateTime.csproj" Id="6514c71b-9e30-49a1-ae20-704b54b39696" />
   <Project Path="08_Donguler/08_Donguler.csproj" Id="2cf8bbb7-97c2-4c51-8df0-ce5b02aa20ff" />
+  <Project Path="09_Diziler/09_Diziler.csproj" Id="022426a5-147e-4cd1-ac6c-70ac9b51ebdc" />
 </Solution>

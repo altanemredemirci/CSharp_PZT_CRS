@@ -480,32 +480,32 @@
 
 
 
-            int toplamSatir = 12;
-            for (int satir = 0; satir <= toplamSatir; satir++)
-            {
-                int bosluk, yildiz;
+            //int toplamSatir = 12;
+            //for (int satir = 0; satir <= toplamSatir; satir++)
+            //{
+            //    int bosluk, yildiz;
 
-                if (satir < 7)
-                {
-                    bosluk = satir;
-                    yildiz = 13 - (2 * satir);
-                }
-                else
-                {
-                    bosluk = 12 - satir;
-                    yildiz = (2 * (satir - 6)) + 1;
-                }
+            //    if (satir < 7)
+            //    {
+            //        bosluk = satir;
+            //        yildiz = 13 - (2 * satir);
+            //    }
+            //    else
+            //    {
+            //        bosluk = 12 - satir;
+            //        yildiz = (2 * (satir - 6)) + 1;
+            //    }
 
-                for (int i = 0; i < bosluk; i++)
-                {
-                    Console.Write(" ");
-                }
-                for (int i = 0; i < yildiz; i++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+            //    for (int i = 0; i < bosluk; i++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int i = 0; i < yildiz; i++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
 
@@ -516,11 +516,18 @@
              ..
             ...
             ..
-             1x10=10          
-
-
+             1x10=10  
 
              */
+
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.Write($"{j}x{i}={j*i}\t");
+                }
+                Console.WriteLine();
+            }
 
 
 
