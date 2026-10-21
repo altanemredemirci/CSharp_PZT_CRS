@@ -9,4 +9,5 @@
   <Project Path="08_Donguler/08_Donguler.csproj" Id="2cf8bbb7-97c2-4c51-8df0-ce5b02aa20ff" />
   <Project Path="09_Diziler/09_Diziler.csproj" Id="022426a5-147e-4cd1-ac6c-70ac9b51ebdc" />
   <Project Path="09_OtomatMakinesi/09_OtomatMakinesi.csproj" Id="2f7b57cb-986d-4863-b53e-84dda7785779" />
+  <Project Path="10_TryCatch/10_TryCatch.csproj" Id="cf569f4e-ba05-4918-b1b9-ef94a1260f2e" />
 </Solution>
