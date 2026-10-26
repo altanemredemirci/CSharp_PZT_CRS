@@ -49,16 +49,54 @@
             //}
 
 
-            try
+            //try
+            //{
+            //    Console.WriteLine("Sayı:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine(10 / sayi);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+
+            #region Kullanıcıdan 2 sayı alınız. Girilen her değeri kontrol ederek doğru girilmesi halinde toplayınız. 1. sayı doğru 2. sayı yanlış girilirse sayıyı tekrar isteyiniz.
+
+            int sayi1, sayi2;
+
+            while (true)
             {
-                Console.WriteLine("Sayı:");
-                int sayi = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(10 / sayi);
+                try
+                {
+                    Console.WriteLine("1.Sayı:");
+                    sayi1 = Convert.ToInt32(Console.ReadLine());
+                    break;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Sayıyı rakam olarak giriniz");
+                }
             }
-            catch (Exception ex)
+
+            while (true)
             {
-                Console.WriteLine(ex.Message);
+                try
+                {
+                    Console.WriteLine("2.Sayı:");
+                    sayi2 = Convert.ToInt32(Console.ReadLine());
+                    break;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Sayıyı rakam olarak giriniz");
+                }
             }
+
+            Console.WriteLine("Toplam:"+(sayi1+sayi2));
+
+            #endregion
+
 
         }
     }
