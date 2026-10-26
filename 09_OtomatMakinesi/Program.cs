@@ -139,6 +139,168 @@
             //i = 0'dan urunSayisina kadar dönen bir For Döngüsü kur ve tüm diziyi ekrana yazdır.
 
             #endregion
+
+            string[] urunler = { "Kola", "Fanta", "Bisküvi" };
+            int[] fiyatlar = { 50, 45, 35 };
+            int gunsonu = 0;
+
+
+            while (true)
+            {
+                for (int i = 0; i < urunler.Length; i++)
+                {
+                    Console.WriteLine($"{i}-{urunler[i]}:{fiyatlar[i]}");
+                }
+
+                Console.WriteLine("Ürün No:");
+                int urunNo = Convert.ToInt32(Console.ReadLine());
+
+                int bakiye = 0;
+
+                if (urunNo >= 0 && urunNo < urunler.Length)
+                {
+                    while (true)
+                    {
+                        Console.Write("Para Yatır:");
+                        bakiye += Convert.ToInt32(Console.ReadLine());
+
+                        if (bakiye >= fiyatlar[urunNo])
+                        {
+                            bakiye -= fiyatlar[urunNo];
+                            Console.WriteLine("Afiyet Olsun. Para Üstü:"+bakiye);
+                            gunsonu = fiyatlar[urunNo];
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Yetersiz Bakiye!");
+                            Console.WriteLine("Para Ekle\t1\nPara İade\t2\nSeçiminiz:");
+                            int secim = Convert.ToInt32(Console.ReadLine());
+
+                            if (secim == 1)
+                            {
+                                continue;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Para iade edildi:"+bakiye);
+                                bakiye = 0;
+                                break;
+                            }
+
+                        }
+                    }
+                    
+                }
+
+                else if (urunNo == 100)
+                {
+                    Console.WriteLine("**** YÖNETİCİ PANELİ ****");
+                    Console.WriteLine("1-Ürün Ekle\n2-Ürün Güncelle\n3-Ürün Sil\n4-Ürün Listele\n5-Günsonu");
+                    int secim = Convert.ToInt32(Console.ReadLine());
+
+                    if (secim == 1) 
+                    {
+                        Console.WriteLine("Yeni Ürün Adı:");
+                        string urunAdi = Console.ReadLine();
+                        Console.WriteLine("Yeni Ürün Fiyat:");
+                        int fiyat = Convert.ToInt32(Console.ReadLine());
+
+                        bool isAdd = false;
+
+                        for (int i = 0; i < urunler.Length; i++)
+                        {
+                            if (urunler[i] == null)
+                            {
+                                urunler[i] = urunAdi;
+                                fiyatlar[i] = fiyat;
+                                isAdd = true;
+                                break;
+                            }
+                        }
+                        if (isAdd == false)
+                        {
+                            Array.Resize(ref urunler, urunler.Length + 1);
+                            Array.Resize(ref fiyatlar, fiyatlar.Length + 1);
+
+                            urunler[urunler.Length - 1] = urunAdi;
+                            fiyatlar[fiyatlar.Length - 1] = fiyat;
+                        }
+                        
+                        Console.WriteLine("Ürün Eklendi.");
+
+
+                    }
+                    else if (secim == 2) 
+                    {
+                        for (int i = 0; i < urunler.Length; i++)
+                        {
+                            Console.WriteLine($"{i}-{urunler[i]}:{fiyatlar[i]}");
+                        }
+                        Console.WriteLine("Ürün No:");
+                        int guncellenecekUrunNo = Convert.ToInt32(Console.ReadLine());
+
+                        if(guncellenecekUrunNo>=0 && guncellenecekUrunNo < urunler.Length)
+                        {
+                            Console.WriteLine("Fiyat:");
+                            int fiyat = Convert.ToInt32(Console.ReadLine());
+
+                            fiyatlar[guncellenecekUrunNo] = fiyat;
+
+                            Console.WriteLine("Ürün Güncellendi.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ürün Bulunamadı.");
+                        }
+                    }
+                    else if (secim == 3) 
+                    {
+                        for (int i = 0; i < urunler.Length; i++)
+                        {
+                            Console.WriteLine($"{i}-{urunler[i]}:{fiyatlar[i]}");
+                        }
+                        Console.WriteLine("Ürün No:");
+                        int silinecekUrunNo = Convert.ToInt32(Console.ReadLine());
+
+                        if (silinecekUrunNo >= 0 && silinecekUrunNo < urunler.Length)
+                        {
+                            Array.Clear(urunler, silinecekUrunNo, 1);
+                            Array.Clear(fiyatlar, silinecekUrunNo, 1);
+                            
+                            Console.WriteLine("Ürün Silindi.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ürün Bulunamadı.");
+                        }
+                    }
+                    else if (secim == 4) 
+                    {
+                        for (int i = 0; i < urunler.Length; i++)
+                        {
+                            Console.WriteLine($"{i}-{urunler[i]}:{fiyatlar[i]}");
+                        }
+                    }
+                    else if (secim == 5) 
+                    {
+                        Console.WriteLine("Günsonu:"+gunsonu);
+                        Console.WriteLine("Sıfırla-1\nÇıkış-0");
+                        int sifirla = Convert.ToInt32(Console.ReadLine());
+                        if (sifirla == 1)
+                        {
+                            gunsonu = 0;
+                        }
+                    }
+
+                }
+
+                else
+                {
+                    Console.WriteLine("Hatalı Ürün No!!");
+                }
+            }
+           
         }
     }
 }
