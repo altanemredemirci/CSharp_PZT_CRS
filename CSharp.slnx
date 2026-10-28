@@ -10,4 +10,5 @@
   <Project Path="09_Diziler/09_Diziler.csproj" Id="022426a5-147e-4cd1-ac6c-70ac9b51ebdc" />
   <Project Path="09_OtomatMakinesi/09_OtomatMakinesi.csproj" Id="2f7b57cb-986d-4863-b53e-84dda7785779" />
   <Project Path="10_TryCatch/10_TryCatch.csproj" Id="cf569f4e-ba05-4918-b1b9-ef94a1260f2e" />
+  <Project Path="11_ArrayList/11_ArrayList.csproj" Id="c48ada5b-8006-46ea-a81d-63e369a64dd4" />
 </Solution>
