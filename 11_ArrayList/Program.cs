@@ -120,24 +120,24 @@ namespace _11_ArrayList
 
             #region Kullanıcıdan sayı girmesini isteyelim. Sayı yerine çık yazana kadar girilen sayıları bir arrayliste ekleyelim. sayı yerine çık ifadesini yazarsa arraylist içindeki sayıların toplamını ekrana yazdıralım.
 
-            ArrayList sayilar = new ArrayList();
-            int toplam = 0;
+            //ArrayList sayilar = new ArrayList();
+            //int toplam = 0;
 
-            while (true)
-            {
-                Console.WriteLine("Sayı:");
-                string sayi = Console.ReadLine();
+            //while (true)
+            //{
+            //    Console.WriteLine("Sayı:");
+            //    string sayi = Console.ReadLine();
 
-                if (sayi == "çık" || sayi=="cik")
-                    break;
+            //    if (sayi == "çık" || sayi=="cik")
+            //        break;
 
-                int deger = Convert.ToInt32(sayi);
+            //    int deger = Convert.ToInt32(sayi);
 
-                sayilar.Add(deger);
-                toplam += deger;
-            }
+            //    sayilar.Add(deger);
+            //    toplam += deger;
+            //}
 
-            Console.WriteLine(toplam);
+            //Console.WriteLine(toplam);
 
 
 

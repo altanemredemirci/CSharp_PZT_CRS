@@ -11,4 +11,6 @@
   <Project Path="09_OtomatMakinesi/09_OtomatMakinesi.csproj" Id="2f7b57cb-986d-4863-b53e-84dda7785779" />
   <Project Path="10_TryCatch/10_TryCatch.csproj" Id="cf569f4e-ba05-4918-b1b9-ef94a1260f2e" />
   <Project Path="11_ArrayList/11_ArrayList.csproj" Id="c48ada5b-8006-46ea-a81d-63e369a64dd4" />
+  <Project Path="11_ManavOtomasyonu/11_ManavOtomasyonu.csproj" Id="897929ec-d646-4ccf-9fa3-8375af898a40" />
+  <Project Path="11_OkulEtkinlik/11_OkulEtkinlik.csproj" Id="d178e609-21c7-4989-a107-82a83f4dd8d9" />
 </Solution>
