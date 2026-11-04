@@ -14,6 +14,9 @@
   <Project Path="11_ManavOtomasyonu/11_ManavOtomasyonu.csproj" Id="897929ec-d646-4ccf-9fa3-8375af898a40" />
   <Project Path="11_OkulEtkinlik/11_OkulEtkinlik.csproj" Id="d178e609-21c7-4989-a107-82a83f4dd8d9" />
   <Project Path="12_Metotlar_1/12_Metotlar_1.csproj" Id="32c5fbd6-fb73-47f9-ab0e-1837df32f177" />
+  <Project Path="12_Metotlar_10/12_Metotlar_10.csproj" Id="54ddbf9a-9459-4fa7-b9ce-9b572c85c451" />
+  <Project Path="12_Metotlar_11/12_Metotlar_11.csproj" Id="bf795863-d21d-47d1-8176-fb038c5bfac8" />
+  <Project Path="12_Metotlar_12/12_Metotlar_12.csproj" Id="a2c7c195-ef61-4741-bae3-23dd1351b9c1" />
   <Project Path="12_Metotlar_2/12_Metotlar_2.csproj" Id="5734650d-970f-4263-8566-ce74325e0a85" />
   <Project Path="12_Metotlar_3/12_Metotlar_3.csproj" Id="b46a778d-67d8-4f58-b308-84ce853f735a" />
   <Project Path="12_Metotlar_4/12_Metotlar_4.csproj" Id="bfe2db75-3d10-4bbf-ad34-394f8bc8e99e" />
@@ -21,4 +24,5 @@
   <Project Path="12_Metotlar_6/12_Metotlar_6.csproj" Id="adeae0fb-2d97-4d9f-9cdf-b315e0266f22" />
   <Project Path="12_Metotlar_7/12_Metotlar_7.csproj" Id="1486d336-3728-4002-ac30-09b89943f11a" />
   <Project Path="12_Metotlar_8/12_Metotlar_8.csproj" Id="fa4f57ce-b796-4cfc-99a7-58aee4a4161e" />
+  <Project Path="12_Metotlar_9/12_Metotlar_9.csproj" Id="1ecee359-7c6b-4b79-9c68-09530e6659ae" />
 </Solution>

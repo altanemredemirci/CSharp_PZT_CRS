@@ -41,6 +41,50 @@
           Tüm sonuçları ekrana yazdırın
 
           */
+            Console.WriteLine("Saatlik Ücretiniz:");
+            double saatUcret = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Çalışılan Saat:");
+            int calisilanSaat = Convert.ToInt32(Console.ReadLine());
+
+            double maas = MaasHesapla(saatUcret, calisilanSaat);
+            double vergi = VergiHesapla(maas);
+            double netMaas = NetMaasHesapla(maas, vergi);
+            string durum = MaasDurumu(netMaas);
+
+            Console.WriteLine(durum);
+
+        }
+
+        static double MaasHesapla(double saatUcreti, int calisilanSaat)
+        {
+            return saatUcreti * calisilanSaat;
+        }
+
+        static double VergiHesapla(double maas)
+        {
+            return maas * 0.2;
+        }
+
+        static double NetMaasHesapla(double brutMaas, double vergi)
+        {
+            return brutMaas - vergi;
+        }
+
+        static string MaasDurumu(double netMaas)
+        {
+            if (netMaas > 150000)
+            {
+                return "Yüksek Gelir";
+            }
+            else if (netMaas > 80000)
+            {
+                return "Orta Gelir";
+            }
+            else
+            {
+                return "Düşük Gelir";
+            }
         }
     }
 }
