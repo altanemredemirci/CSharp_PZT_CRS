@@ -25,4 +25,13 @@
   <Project Path="12_Metotlar_7/12_Metotlar_7.csproj" Id="1486d336-3728-4002-ac30-09b89943f11a" />
   <Project Path="12_Metotlar_8/12_Metotlar_8.csproj" Id="fa4f57ce-b796-4cfc-99a7-58aee4a4161e" />
   <Project Path="12_Metotlar_9/12_Metotlar_9.csproj" Id="1ecee359-7c6b-4b79-9c68-09530e6659ae" />
+  <Project Path="13_SortedList/13_SortedList.csproj" Id="23157bad-31de-4326-a4ea-934b27f29d0e" />
+  <Project Path="14_List/14_List.csproj" Id="1d11b706-b1e3-4a58-b67e-042ef109d0d4" />
+  <Project Path="15_Class_1/15_Class_1.csproj" Id="dfafc7ac-06e9-49a2-b5c3-1108823d946a" />
+  <Project Path="15_Class_2/15_Class_2.csproj" Id="3038b8d0-d9d0-4367-8bb3-0a7e2a9615cb" />
+  <Project Path="15_Class_3/15_Class_3.csproj" Id="fda87613-7da5-435c-8126-4e7e37bf8a0c" />
+  <Project Path="15_Class_4/15_Class_4.csproj" Id="5341cf05-3a6c-45f7-86ae-0e5f0d7f009f" />
+  <Project Path="15_Class_5/15_Class_5.csproj" Id="ad2f7ae8-ca8f-413b-994c-b1bf65fbedf1" />
+  <Project Path="15_Class_6/15_Class_6.csproj" Id="afc8d861-f124-40c9-bd22-0e16a9151ee6" />
+  <Project Path="15_Class_7/15_Class_7.csproj" Id="c6e8ea74-ffde-4461-b2cc-a57cec3c2477" />
 </Solution>
