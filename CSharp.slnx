@@ -34,4 +34,7 @@
   <Project Path="15_Class_5/15_Class_5.csproj" Id="ad2f7ae8-ca8f-413b-994c-b1bf65fbedf1" />
   <Project Path="15_Class_6/15_Class_6.csproj" Id="afc8d861-f124-40c9-bd22-0e16a9151ee6" />
   <Project Path="15_Class_7/15_Class_7.csproj" Id="c6e8ea74-ffde-4461-b2cc-a57cec3c2477" />
+  <Project Path="15_Class_8_Constructor/15_Class_8_Constructor.csproj" Id="b659a240-4b69-4acb-b8ef-dd4565379ecd" />
+  <Project Path="15_Class_8_Constructor_2/15_Class_8_Constructor_2.csproj" Id="94c51ddf-5509-44ae-9064-e8b249012e41" />
+  <Project Path="15_Class_8_Kutuphane/15_Class_8_Kutuphane.csproj" Id="013db779-8612-44bb-a9a0-a355ee0d2be1" />
 </Solution>
