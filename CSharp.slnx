@@ -46,4 +46,9 @@
   <Project Path="17_OOP_2_Encapsulation_2/17_OOP_2_Encapsulation_2.csproj" Id="2fd72838-8d73-4852-9414-84461f659b5c" />
   <Project Path="17_OOP_3_Inheritance_1/17_OOP_3_Inheritance_1.csproj" Id="89a067d3-19ea-4bc4-837f-fb33b3bcbbdc" />
   <Project Path="17_OOP_3_Inheritance_2/17_OOP_3_Inheritance_2.csproj" Id="a77bcdeb-562a-43d3-a2a4-40f0b8cb30a9" />
+  <Project Path="17_OOP_3_Inheritance_3/17_OOP_3_Inheritance_3.csproj" Id="8a539424-f187-4ddd-ae90-f8eb351c8341" />
+  <Project Path="17_OOP_3_Inheritance_4/17_OOP_3_Inheritance_4.csproj" Id="62b424ef-3b43-4d22-b513-5d6e421202f8" />
+  <Project Path="17_OOP_3_Inheritance_5/17_OOP_3_Inheritance_5.csproj" Id="6fe215bf-029e-4aa2-8c89-c745b8b41e69" />
+  <Project Path="17_OOP_4_Polymorphism_1/17_OOP_4_Polymorphism_1.csproj" Id="620264ad-1d50-431f-bf39-1ce2f8bb548d" />
+  <Project Path="17_OOP_4_Polymorphism_2/17_OOP_4_Polymorphism_2.csproj" Id="62fc9c5c-1f4b-4c10-a4ae-b3c19096ee2b" />
 </Solution>
