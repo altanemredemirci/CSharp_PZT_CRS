@@ -51,4 +51,13 @@
   <Project Path="17_OOP_3_Inheritance_5/17_OOP_3_Inheritance_5.csproj" Id="6fe215bf-029e-4aa2-8c89-c745b8b41e69" />
   <Project Path="17_OOP_4_Polymorphism_1/17_OOP_4_Polymorphism_1.csproj" Id="620264ad-1d50-431f-bf39-1ce2f8bb548d" />
   <Project Path="17_OOP_4_Polymorphism_2/17_OOP_4_Polymorphism_2.csproj" Id="62fc9c5c-1f4b-4c10-a4ae-b3c19096ee2b" />
+  <Project Path="17_OOP_5_Abstract_1/17_OOP_5_Abstract_1.csproj" Id="d4972737-3655-4f7f-ac07-797e92c4b93a" />
+  <Project Path="17_OOP_5_Abstract_2/17_OOP_5_Abstract_2.csproj" Id="599bf915-3460-47f9-be32-987bef877f6c" />
+  <Project Path="17_OOP_5_Abstract_3/17_OOP_5_Abstract_3.csproj" Id="4fe8df67-2f97-4df2-8bae-bf4e42c8fe9b" />
+  <Project Path="17_OOP_6_Interface_1/17_OOP_6_Interface_1.csproj" Id="9a9c9c48-0239-43e7-bbae-d64daae38e22" />
+  <Project Path="17_OOP_6_Interface_2/17_OOP_6_Interface_2.csproj" Id="fb05258d-a2e8-4de9-93b3-3ab27aea2708" />
+  <Project Path="18_Proje/18_Proje.csproj" Id="7a33f517-3d82-486c-bdcc-8d411f0dcfd5" />
+  <Project Path="19_Generic_Mimari/19_Generic_Mimari.csproj" Id="bc244240-6dfe-4732-a12d-a8bd85ee23b3" />
+  <Project Path="19_OOP_Generic_2_Overloading/19_OOP_Generic_2_Overloading.csproj" Id="95e4647f-bf26-419d-95db-0eda99340e0b" />
+  <Project Path="19_OOP_Generic_3_Inheritance/19_OOP_Generic_3_Inheritance.csproj" Id="3c96955c-0d77-49b6-a50c-657a734a2b48" />
 </Solution>
